@@ -26,10 +26,10 @@ public class Vehiculo {
 	
 	public static void main (String[] args) {
 		
-		Coche miCoche = new Coche();
+		Coche miCoche = new Coche();   // Creo la instancia
 		miCoche.agregarPuerta();
 		System.out.println("Nro de puertas del coche: "
-							+ miCoche.puertas);
+				  + miCoche.puertas);
 	
 	}
 
