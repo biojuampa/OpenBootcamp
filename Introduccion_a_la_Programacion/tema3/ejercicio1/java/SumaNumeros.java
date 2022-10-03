@@ -37,7 +37,7 @@ public class SumaNumeros {
 	public static int suma3 (int a, int b, int c) {
 			
 			return (a + b + c); // los paréntesis no son necesarios,
-								// pero mejora la visual del código.			
+					    // pero mejora la visual del código.			
 	}
 
 }
