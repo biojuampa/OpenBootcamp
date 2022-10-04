@@ -1,4 +1,5 @@
-# Enunciado de los ejercicios del tema 3 - Introducción a la Informática
+# Tema 3 - Introducción a la Informática
+## Enunciado de los ejercicios
 
 **Primera parte:**
 
