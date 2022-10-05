@@ -27,7 +27,7 @@ class coche:
     puertas = 0
 
     def agregar_puerta(self):
-            self.puertas += 1
+        self.puertas += 1
 
     def n_puertas(self):
         return self.puertas
