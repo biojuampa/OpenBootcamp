@@ -3,7 +3,7 @@
 #
 #  suma_numeros.py
 #  
-#  Copyright 2022 Juan Pablo Camussi <jcamussi@gmail.com>
+#  Copyright 2022 Juan Pablo Camussi <juampa@neo.com>
 #  
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by

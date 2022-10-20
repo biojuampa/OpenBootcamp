@@ -3,7 +3,7 @@
 #
 #  vehiculo.py
 #  
-#  Copyright 2022 Juan Pablo Camussi <jcamussi@gmail.com>
+#  Copyright 2022 Juan Pablo Camussi <juampa@neo.com>
 #  
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -24,13 +24,13 @@
 
 
 class coche:
-    puertas = 0
+    _puertas = 0
 
     def agregar_puerta(self):
-        self.puertas += 1
+        self._puertas += 1
 
     def n_puertas(self):
-        return self.puertas
+        return self._puertas
 
 
 # Main
@@ -38,3 +38,4 @@ mi_coche = coche()  			# Creo la instancia
 
 mi_coche.agregar_puerta()
 print(mi_coche.n_puertas())
+
