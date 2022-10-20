@@ -74,6 +74,7 @@ def mostrar_datos(datos):
     print(f"Vehículo: {datos['tipo']} {datos['color']} {datos['puertas']} puertas\n"
           f"Propietario: {datos['propietario']}\n"
           f"Año: {datos['anio']}\n"
+          f"Tipo de Motor: {datos['motor']}\n"
           )
 
 
