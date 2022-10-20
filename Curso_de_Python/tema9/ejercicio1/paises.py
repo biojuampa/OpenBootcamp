@@ -11,5 +11,5 @@ for pais in entrada:
 
 print()
 for pais in sorted(paises):
-    print(pais, end=' ')
+    print(pais, end=', ')
 print()
