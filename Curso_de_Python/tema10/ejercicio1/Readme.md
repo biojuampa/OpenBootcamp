@@ -5,7 +5,10 @@ En este ejercicio tenéis que crear una lista de RadioButton que muestre la opci
 
 Al principio no tiene que haber una opción seleccionada.
 
----
+## Nota:
 
-**Nota:** realizo 3 ejercicios, utilizando los 3 diferentes _layout manager_ que posee tkinter (pack, place y grid).
+Realizo 3 ejercicios, utilizando los 3 diferentes _layout manager_ que posee tkinter (pack, place y grid), a saber:
 
+1. tkinter_pack.py con _pack_
+2. tkinter_place.py con _place_
+3. tkinter_grid.py con _grid_
