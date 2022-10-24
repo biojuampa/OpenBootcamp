@@ -1,9 +1,18 @@
+import sys
 import tkinter as tk
 from tkinter import ttk, messagebox
 
 
+# Ancho y alto de la ventana principal (root)
+ANCHO = 300
+ALTO = 400
+
+# Tema y colores principales de la aplicación
+TTK_THEME = 'clam'
 BACKGROUND = '#EEE'
 FOREGROUND = 'darkred'
+BUTTONS_BACKGROUND = '#EDD'
+
 
 # En esta lista, agregar los items que se desee que aparezcan
 # para ser seleccionados como Radiobuttons. Se generarán y
@@ -22,7 +31,7 @@ sistemas = [
 
 def mostrar(event=None):
     if sos.get().strip() == '':
-        messagebox.showinfo(message=f'¡NO has seleccionado nada!',
+        messagebox.showinfo(message='¡NO has seleccionado nada!',
                             title='S.O. Seleccionado'
                             )
     elif sos.get() == 'GNU-Linux':
@@ -33,14 +42,14 @@ def mostrar(event=None):
         messagebox.showinfo(message=f'Has seleccionado {sos.get()}',
                             title='S.O. Seleccionado'
                             )
-    
+
 
 def limpiar(event=None):
     sos.set('')
 
 
 def salir(event=None):
-    exit(0)
+    sys.exit(0)
 
 
 def linux(event):
@@ -49,7 +58,7 @@ def linux(event):
 
 def mac(event):
     sos.set('MacOS')
-    
+
 
 def win(event):
     sos.set('Windows')
@@ -61,25 +70,23 @@ def bsd(event):
 
 def otro(event):
     sos.set('Otro')
-    
+
 
 # Main #
 root = tk.Tk()
 # Dimensiones y posición de la ventanta principal (root)
-ancho = 300
-alto = 400
-posx = int((root.winfo_screenwidth() - ancho) / 2)
-posy = int((root.winfo_screenheight() - alto) / 2)
+posx = int((root.winfo_screenwidth() - ANCHO) / 2)
+posy = int((root.winfo_screenheight() - ALTO) / 2)
+root.geometry(f'{ANCHO}x{ALTO}+{posx}+{posy}')
 # Configuración general de la ventana principal (root)
-root.geometry(f'{ancho}x{alto}+{posx}+{posy}')
 root.configure(bg=BACKGROUND)
 root.minsize(width=250, height=320)
 root.title('Sistemas Operativos')
 
 # Tema y colores para los objetos ttk
 style = ttk.Style()
-style.theme_use('clam')
-style.configure('TButton', background='#EDD', foreground=FOREGROUND)
+style.theme_use(TTK_THEME)
+style.configure('TButton', background=BUTTONS_BACKGROUND, foreground=FOREGROUND)
 style.configure('TRadiobutton', background=BACKGROUND, foreground=FOREGROUND)
 style.configure('TFrame', background=BACKGROUND)
 style.configure('TLabel', background=BACKGROUND,foreground=FOREGROUND)
@@ -88,25 +95,21 @@ style.configure('TLabel', background=BACKGROUND,foreground=FOREGROUND)
 root.columnconfigure(0, weight=1)
 root.rowconfigure(1, weight=5)
 root.rowconfigure(2, weight=1)
- 
 
 # Etiquetas (sin frame)
 enunciado = ttk.Label(root, text='Selecciona el S.O. que más te gusta')
 enunciado.grid(row=0, column=0, pady=(10, 5))
-
 
 # Contenedor para los Radiobuttons
 contenedor_rbs = ttk.Frame(root)
 contenedor_rbs.grid(row=1, column=0, sticky='ns')
 contenedor_rbs.rowconfigure(tuple(range(len(sistemas))), weight=1)
 
-
 # Contenedor para los Buttons
 contenedor_btns = ttk.Frame(root)
 contenedor_btns.grid(row=2, column=0, sticky='nsew')
 contenedor_btns.rowconfigure((0, 1), weight=1)
 contenedor_btns.columnconfigure((0, 1), weight=1)
-
 
 # ---------------------------------------------------------------------------- #
 # Comentar/descomentar la lista rbs y rbs.append (al final del for) según se
