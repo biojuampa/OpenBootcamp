@@ -1,0 +1,69 @@
+
+{% load static %}
+
+<html lang="es">
+
+    <head>
+        <title> &nbsp; CINÉFILOS.COM </title>
+   		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext"  type="text/css">
+        <link rel="stylesheet" href="{% static 'css/miapp.css' %}">
+        <link rel="shortcut icon" type="image/png" href="{% static 'images/camara.png' %}">
+    </head>
+
+    <body>
+        <hr>
+        <div id="contenedor">
+            <div class="izq"><img src="{% static 'images/claqueta.png' %}" alt="claqueta de cine"></div>
+            <div class="cen"><h1><a href="/"> Bienvenidos a CINÉFILOS.COM </a></h1></div>
+            <div class="der"><img src="{% static 'images/claqueta.png' %}" alt="claqueta de cine"></div>
+        </div>
+        <hr>
+
+        <div class="main">
+            <h2>
+                <a href="/"> Directores de cine: </a>
+            </h2>
+
+            <!-- Lista de directores de cine -->
+
+            {% for director in directors %}
+            <ul>
+                <li><a href="{% url 'directorview' dname=director.name %}"> <strong>{{ director }}</strong> </a></li>
+
+                <!-- Muestro los datos del director -->
+
+                {% if director.name == dname %}
+                <br>
+                <ul>
+                    <li> Fecha de nacimiento: {{ director.birth }} </li>
+                    <li> Fecha de deceso: {{ director.dead }} </li>
+                    <li><a href="{% url 'phraseview' dname=director.name phrase=director.phrase.name %}"> Frase famosa </a></li>
+
+                    <!-- Muestro la frase del director -->
+
+                    {% if director.phrase.name == phrase %}
+                        <textarea disabled=""> {{ director.phrase.famous_phrase }} </textarea>
+                    {% endif %}
+
+                    <li> Películas </li>
+                    <ol>
+                        {% for movie in director.movies.all %}
+                        <li><a href="{% url 'movieview' dname=director.name mtitle=movie.title %}"> {{ movie }} </a></li>
+
+                        <!-- Muestro la sinopsis de la película -->
+
+                        {% if movie.title == mtitle %}
+                            <textarea disabled=""> {{ movie.synopsis }} </textarea>
+                        {% endif %}
+
+                        {% endfor %}
+                    </ol>
+                </ul>
+                {% endif %}
+            </ul>
+            {% endfor %}
+        </div>
+    </body>
+</html>
