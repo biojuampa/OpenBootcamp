@@ -5,3 +5,7 @@ En este ejercicio tendrás que crear una aplicación en Django que almacene dato
 
 Tienes que personalizar el admin de la aplicación y a su vez crear las vistas de cada una de las partes de la aplicación.
 
+Nota
+----
+
+Subo junto con el proyecto una base de datos con algunos directores y películas ya cargados, así como también un súper usuario, cuyo nombre es 'admin' y contraseña 'admin'.

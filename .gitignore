@@ -1,5 +1,4 @@
 # Django #
-*~
 *.pyc
 __pycache__
 virtual/
@@ -8,4 +7,5 @@ virtual/
 *.dat
 *.txt
 *.db
-
+*.backup
+*~
