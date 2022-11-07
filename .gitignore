@@ -1,4 +1,10 @@
+# Django #
+*~
+*.pyc
 __pycache__
+virtual/
+
+# Otros #
 *.dat
 *.txt
 *.db
