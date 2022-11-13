@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#
-#  phonebook.py - Intensivo desde Cero (ejercicio 2)
-#
+"""
+  phonebook.py - Intensivo desde Cero (ejercicio 2)
 
+"""
 
 import pickle
 import sys
@@ -112,7 +112,7 @@ def phonebook_change(book_path, pbook):
                 saved_pbook = pickle.load(fhand)
         else:
             saved_pbook = {}
-            
+
         if saved_pbook == pbook:
             return False
         else:
