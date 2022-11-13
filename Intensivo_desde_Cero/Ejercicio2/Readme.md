@@ -18,7 +18,7 @@ __Ampliación:__
     * Pepe 659331013
     * Pepe Martín 633743551
 
-__Nota:__
+Nota:
+----
 
 Quizás me exedí un poco, es que me entusiasmé, y ciertamente fue una buena ejercitación :)
-
