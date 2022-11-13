@@ -17,3 +17,8 @@ __Ampliación:__
   Resultados:
     * Pepe 659331013
     * Pepe Martín 633743551
+
+__Nota:__
+
+Quizás me exedí un poco, es que me entusiasmé, y ciertamente fue una buena ejercitación :)
+
