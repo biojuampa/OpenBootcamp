@@ -9,3 +9,5 @@ virtual/
 *.db
 *.backup
 *~
+*.csv
+*.xls*
