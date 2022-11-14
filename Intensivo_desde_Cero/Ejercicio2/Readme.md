@@ -1,4 +1,4 @@
-# Ejercicio 2
+# Ejercicio 2 - Intensivo desde Cero
 
 __Enunciado:__ Crea una agenda de teléfonos que se gestione por consola, que te permita:
 
