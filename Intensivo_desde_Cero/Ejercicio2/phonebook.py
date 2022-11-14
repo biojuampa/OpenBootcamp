@@ -76,17 +76,16 @@ def delete_phonebook(book_path):
             print(f'La agenda [{book_name}] NO existe, compruebe el nombre.')
             sleep(2)
             return -1
-
-    try:
-        print(f'Borrando la agenda [{book_name}] ...')
-        os.remove(f'{book_path}.bin')
-        sleep(1)
-        print(f'La agenda [{book_name}] fue borrada con éxito.')
-        sleep(2)
-    except:
-        print(f'ERROR: ¡La agenda [{book_name}] existe, pero no se pudo borrar!')
-        sleep(2)
-        return -1
+        try:
+            print(f'Borrando la agenda [{book_name}] ...')
+            os.remove(f'{book_path}.bin')
+            sleep(1)
+            print(f'La agenda [{book_name}] fue borrada con éxito.')
+            sleep(2)
+        except:
+            print(f'ERROR: ¡La agenda [{book_name}] existe, pero no se pudo borrar!')
+            sleep(2)
+            return -1
 
 
 def save_phonebook(book_path, pbook):
@@ -306,12 +305,12 @@ def main_menu():
             if book_name:
                 phonebook_name = book_name
 
-            pb = load_phonebook(f'{BOOKS}/{phonebook_name}')
-            if pb == -1:
+            load_pb = load_phonebook(f'{BOOKS}/{phonebook_name}')
+            if load_pb == -1:
                 phonebook_name = last_pb_name
                 continue
 
-            phonebook = pb
+            phonebook = load_pb
             secondary_menu()
 
 # ------------------------------- Crear agenda ------------------------------- #
@@ -321,12 +320,12 @@ def main_menu():
             if book_name:
                 phonebook_name = book_name
 
-            pb = create_phonebook(f'{BOOKS}/{phonebook_name}')
-            if pb == -1:
+            create_pb = create_phonebook(f'{BOOKS}/{phonebook_name}')
+            if create_pb == -1:
                 phonebook_name = last_pb_name
                 continue
 
-            phonebook = pb
+            phonebook = create_pb
             secondary_menu()
 
 # ------------------------------- Borrar agenda ------------------------------ #
@@ -336,10 +335,12 @@ def main_menu():
             if book_name:
                 phonebook_name = book_name
 
-            pb = delete_phonebook(f'{BOOKS}/{phonebook_name}')
-            if pb == -1:
+            del_pb = delete_phonebook(f'{BOOKS}/{phonebook_name}')
+            if del_pb == -1:
                 phonebook_name = last_pb_name
                 continue
+            else:
+                phonebook_name = ''
 
 # ------------------------------- Listar agenda ------------------------------ #
         elif option == '4':
