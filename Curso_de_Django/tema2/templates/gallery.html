@@ -1,0 +1,16 @@
+{% extends 'layouts/base.html' %}
+
+{% load static %}
+
+{% block title %}
+  JPC Fotografía - Galería de Fotos
+{% endblock %}
+
+{% block content %}
+  <h1>Galería</h1>
+  {% for photo in photos %}
+    <a href='/static/images/gallery/{{ photo }}.jpg'>
+      <img class="gallery" src='/static/images/gallery/{{ photo }}.jpg' alt={{ photo }} title={{ photo }}>
+    </a>
+  {% endfor %}
+{% endblock %}

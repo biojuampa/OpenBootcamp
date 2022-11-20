@@ -1,0 +1,24 @@
+{% extends 'layouts/base.html' %}
+
+{% load static %}
+
+{% block title %} JPC Fotografía {% endblock %}
+
+{% block content %}
+<!-- center -->
+  <h1>JPC Fotografía</h1>
+  <img src="{% static 'images/logo.png' %}" width="200px" alt="Logo">
+  <p>
+    Mi nombre es Juan Pablo Camussi, soy fotógrafo profesional desde hace más de 20 años, 
+    he trabajado en mucho proyectos conocidos. A continuación te dejo una lista de alguno
+    de mis trabajos. También si quieres, puedes visitar mi <a href="{% url 'gallery' %}">galería de fotos</a>.
+  </p>
+  <ul>
+    <li><a href="">Trabajo 1</a></li>
+    <li><a href="">Trabajo 2</a></li>
+    <li><a href="">Trabajo 3</a></li>
+    <li><a href="">Trabajo 4</a></li>
+    <li><a href="">Trabajo 5</a></li>
+  </ul>
+<!-- /center -->
+{% endblock %}

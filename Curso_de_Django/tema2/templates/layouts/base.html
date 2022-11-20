@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}">
+  </head>
+
+  <body>
+    <header>
+      {% include 'layouts/partials/menu.html' %}
+    </header>
+
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+
+    {% include 'layouts/partials/footer.html' %}
+  </body>
+</html>

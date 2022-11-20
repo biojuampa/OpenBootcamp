@@ -2,6 +2,8 @@
 *.pyc
 __pycache__
 virtual/
+**/static/images/gallery/*
+!**/static/images/gallery/Readme.md
 
 # Otros #
 *.dat
