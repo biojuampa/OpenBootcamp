@@ -1,5 +1,6 @@
 # Django #
 *.pyc
+db.sqlite3
 __pycache__
 virtual/
 **/static/images/gallery/*
