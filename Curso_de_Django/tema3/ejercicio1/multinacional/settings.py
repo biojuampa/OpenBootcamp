@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "empleados",
     "django_countries",
+    "django_seed",
 ]
 
 MIDDLEWARE = [
@@ -77,8 +78,18 @@ WSGI_APPLICATION = "multinacional.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+# ------------------- Sqlite3 ------------------- #
+#        "ENGINE": "django.db.backends.sqlite3",
+#        "NAME": BASE_DIR / "db.sqlite3",
+
+# ----------------- PostgreSQL ------------------ #
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "empleados",
+#        "USER": "pi",
+#        "PASSWORD": "",
+#        "HOST": "127.0.0.1",
+#        "PORT": "5432",
+# ----------------------------------------------- #
     }
 }
 
