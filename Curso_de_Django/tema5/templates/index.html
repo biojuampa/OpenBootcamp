@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>ecommerce</title>
+    </head>
+    
+    <body>
+        <h1>Producto</h1>
+        <hr>
+        <form action="{% url 'index' %}" method="POST">
+            {% csrf_token %}
+            <table>
+                {{ form.as_table }}
+            </table>
+            <input type="submit" value="Enviar" style="padding: 10px; margin: 50px; width: 200px;"> 
+        </form>
+    </body>
+</html>

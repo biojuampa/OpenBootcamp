@@ -1,0 +1,14 @@
+<form action="{% url 'getgoal' %}" method="GET" >
+	<h3>Formulario de contacto con método GET</h3>
+	
+    <label>Nombre </label>
+	<input type="text" name="name" placeholder="Escribe tu nombre ...">
+	
+    <label>Comentario </label>
+	<input type="textarea" name="message" placeholder="Escribe un comentario ...">
+	
+    <label>Email </label>
+	<input type="email" name="email" placeholder="Escribe tu email ...">
+    
+    <input type="submit" value="Enviar">
+</form>
