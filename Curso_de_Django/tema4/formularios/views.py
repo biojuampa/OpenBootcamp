@@ -47,12 +47,12 @@ def formsform(request):
     return render(request, 'formsform.html', {'form': form})
 
 def formsgoal(request):
-    if request.method != 'GET':
+    if request.method != 'POST':
         return HttpResponse(f'Método {request.method} no soportado')
     
-    name = request.GET['name']
-    comment = request.GET['message']
-    email = request.GET['email']
+    name = request.POST['name']
+    comment = request.POST['message']
+    email = request.POST['email']
     return render(request, 'success.html', {'name': name,
                                             'comment': comment,
                                             'email': email

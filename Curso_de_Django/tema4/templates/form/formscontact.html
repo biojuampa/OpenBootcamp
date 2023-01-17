@@ -1,4 +1,7 @@
-<form action="{% url 'formsgoal' %}" method="GET">
-    {{ form.as_p }}
+<form action="{% url 'formsgoal' %}" method="POST">
+  {% csrf_token %}
+  <table>
+    {{ form.as_table }}
+  </table>
     <input type="submit" value="Enviar">
 </form>
