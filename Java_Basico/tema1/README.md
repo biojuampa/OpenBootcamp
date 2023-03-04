@@ -13,12 +13,13 @@
 1. 1.10 Sentencias if else
 1. 1.11 Bucles for
 
-1.12 Bucles while
-1.13 Uso de continue y break
-1.14 Sentencias switch
-1.15 Crear clases
-1.16 Crear objetos
-1.17 Herencia
+* 1.12 Bucles while
+* 1.13 Uso de continue y break
+* 1.14 Sentencias switch
+* 1.15 Crear clases
+* 1.16 Crear objetos
+* 1.17 Herencia
+
 1.18 El método super
 1.19 Sobreescritura
 1.20 Polimorfismo
