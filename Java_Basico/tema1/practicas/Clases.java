@@ -18,11 +18,11 @@ public class Habitacion {
     private int personas;
 
     // Constructores con Sobrecarga
-    private void Habitacion() {
+    public Habitacion() {
         this.personas = 0;
     }
 
-    private void Habitacion(int personas) {
+    public Habitacion(int personas) {
         this.personas = personas;
     }
 
