@@ -1,14 +1,14 @@
 # 1. Conceptos
 
-1.1 Entorno de desarrollo  
-1.2 Hola mundo  
-1.3 Comentarios y documentación  
-1.4 Variables y tipos de datos  
-1.5 Operadores  
-1.6 Palabras reservadas  
-1.7 Funciones y parámetros  
-1.8 Ámbitos y retorno de una función  
-1.9 Sobrecarga de funciones  
+1.1  Entorno de desarrollo  
+1.2  Hola mundo  
+1.3  Comentarios y documentación  
+1.4  Variables y tipos de datos  
+1.5  Operadores  
+1.6  Palabras reservadas  
+1.7  Funciones y parámetros  
+1.8  Ámbitos y retorno de una función  
+1.9  Sobrecarga de funciones  
 1.10 Sentencias if else  
 1.11 Bucles for  
 1.12 Bucles while  
