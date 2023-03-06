@@ -6,6 +6,9 @@ virtual/
 **/static/images/gallery/*
 !**/static/images/gallery/Readme.md
 
+# java #
+*.class
+
 # Otros #
 *.dat
 *.txt
