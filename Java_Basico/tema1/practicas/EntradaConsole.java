@@ -1,6 +1,6 @@
 import java.io.Console;
 
-public class Entrada {
+public class EntradaConsole {
     public static void main (String[] args) {
         Console input = System.console();
         
