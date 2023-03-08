@@ -9,6 +9,9 @@ virtual/
 # java #
 *.class
 
+# Vim #
+*.swp
+
 # Otros #
 *.dat
 *.txt
