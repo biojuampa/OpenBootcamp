@@ -38,7 +38,6 @@ public abstract class SmartDevice {
         this.name = name;
         this.brand = brand;
         this.model = model;
-        this.specialFeatures = specialFeatures;
         this.screenWidth = screenWidth;    
         this.screenHeight = screenHeight;   
         this.weight = weight;         
@@ -53,7 +52,7 @@ public abstract class SmartDevice {
     public float getPriceWithDiscount() {
         float discount = this.discountPercent;
         if (discount > 0 && discount <= 100)
-            return this.price * (1 - discount/100);
+            return this.price * (1 + discount/100);
         else
             return -1;
     }

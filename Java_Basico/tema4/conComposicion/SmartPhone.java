@@ -46,16 +46,15 @@ public class SmartPhone extends SmartDevice {
               batteryCapacity,
               batteryDuration,  
               screenTecnology,
-              operatingSystem
+              operatingSystem,
+              nfc,
+              dualSim,
+              footprintReader,
+              cameras, 
+              networkTech,   
+              pen,
+              fmRadio
         );
-
-        this.nfc = nfc;
-        this.dualSim = dualSim;
-        this.footprintReader = footprintReader;
-        this.cameras = cameras;
-        this.networkTech = networkTech;   
-        this.pen = pen;
-        this.fmRadio = fmRadio;
 
     }
 
