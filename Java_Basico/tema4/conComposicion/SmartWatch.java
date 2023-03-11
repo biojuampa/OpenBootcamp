@@ -20,7 +20,7 @@ public class SmartWatch extends SmartDevice {
                       float weight,         
                       short batteryCapacity,
                       int batteryDuration,  
-                      String screenTecnology,
+                      String screenTechnology,
                       String operatingSystem,
                       String shape,
                       String bandMaterial,
@@ -39,7 +39,7 @@ public class SmartWatch extends SmartDevice {
               weight,         
               batteryCapacity,
               batteryDuration,  
-              screenTecnology,
+              screenTechnology,
               operatingSystem
         );
 

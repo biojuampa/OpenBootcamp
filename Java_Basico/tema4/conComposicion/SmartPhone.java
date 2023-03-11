@@ -23,7 +23,7 @@ public class SmartPhone extends SmartDevice {
                       float weight,         
                       short batteryCapacity,
                       int batteryDuration,  
-                      String screenTecnology,
+                      String screenTechnology,
                       String operatingSystem,
                       boolean nfc,
                       boolean dualSim,
@@ -45,16 +45,17 @@ public class SmartPhone extends SmartDevice {
               weight,         
               batteryCapacity,
               batteryDuration,  
-              screenTecnology,
-              operatingSystem,
-              nfc,
-              dualSim,
-              footprintReader,
-              cameras, 
-              networkTech,   
-              pen,
-              fmRadio
+              screenTechnology,
+              operatingSystem
         );
+
+        this.nfc = nfc;
+        this.dualSim = dualSim;
+        this.footprintReader = footprintReader;
+        this.cameras = cameras;
+        this.networkTech = networkTech;   
+        this.pen = pen;
+        this.fmRadio = fmRadio;
 
     }
 

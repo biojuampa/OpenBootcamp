@@ -7,14 +7,13 @@ public abstract class SmartDevice {
     private String brand;
     private String model;
     private String specialFeatures;
-    private short screenWidth;      // pixels
-    private short screenHeight;     // pixels
     private float weight;           // grs
     private short batteryCapacity;  // mah
     private int batteryDuration;    // seconds
-    private String screenTecnology;
     private String operatingSystem;
-
+    private Screen screenDetails;
+//    private Screen screenDetails = new Screen();
+  
     // Constructores
     public SmartDevice() {}
 
@@ -29,7 +28,7 @@ public abstract class SmartDevice {
                        float weight,          
                        short batteryCapacity, 
                        int batteryDuration,   
-                       String screenTecnology,
+                       String screenTechnology,
                        String operatingSystem
     ) {
         
@@ -38,13 +37,18 @@ public abstract class SmartDevice {
         this.name = name;
         this.brand = brand;
         this.model = model;
-        this.screenWidth = screenWidth;    
-        this.screenHeight = screenHeight;   
+        this.specialFeatures = specialFeatures;
         this.weight = weight;         
         this.batteryCapacity = batteryCapacity;
         this.batteryDuration = batteryDuration;
-        this.screenTecnology = screenTecnology;
         this.operatingSystem = operatingSystem;
+//        this.screenDetails.setWidth = screenWidth;    
+//        this.screenDetails.setHeight = screenHeight;   
+//        this.screenDetails.setTechnology = screenTechnology;
+        this.screenDetails = new Screen(screenWidth,
+                                        screenHeight,
+                                        screenTechnology
+                                        );
 
     }
     
@@ -52,7 +56,7 @@ public abstract class SmartDevice {
     public float getPriceWithDiscount() {
         float discount = this.discountPercent;
         if (discount > 0 && discount <= 100)
-            return this.price * (1 + discount/100);
+            return this.price * (1 - discount/100);
         else
             return -1;
     }
@@ -104,20 +108,6 @@ public abstract class SmartDevice {
         return this.specialFeatures;
     }
 
-    public void setScreenWidth(short screenWidth) {
-        this.screenWidth = screenWidth;
-    }
-    public short getScreenWidth() {
-        return this.screenWidth;
-    }
-
-    public void setScreenHeight(short screenHeight) {
-        this.screenHeight = screenHeight;
-    }
-    public short getScreenHeight() {
-        return this.screenHeight;
-    }
-
     public void setWeight(float weight) {
         this.weight = weight;
     }
@@ -130,27 +120,28 @@ public abstract class SmartDevice {
     }
     public short getBatteryCapacity() {
         return this.batteryCapacity;
-    } //
+    }
 
     public void setBatteryDuration(int batteryDuration) {
         this.batteryDuration = batteryDuration;
     }
     public int getBatteryDuration() {
         return this.batteryDuration;
-    } //
-
-    public void setScreenTecnology(String screenTecnology) {
-        this.screenTecnology = screenTecnology;
     }
-    public String getScreenTecnology() {
-        return this.screenTecnology;
-    } //
 
     public void setOperatingSystem(String operatingSystem) {
         this.operatingSystem = operatingSystem;
     }
     public String getOperatingSystem() {
         return this.operatingSystem;
+    }
+    
+    // Getter and setter for Screen object
+    public void setScreen(Screen screenDetails) {
+        this.screenDetails = screenDetails;
+    }
+    public Screen getScreen() {
+        return this.screenDetails;
     }
 
 } 
