@@ -1,0 +1,41 @@
+{
+  "alumnos": [
+    {
+      "nombre": "pepe",
+      "edad": 15,
+      "materiasAprobadas": [
+        {
+          "matematica": {
+            "estado": "Aprobada",
+            "nota": 10
+          }
+        },
+        {
+          "matematica": {
+            "estado": "Aprobada",
+            "nota": 10
+          }
+        }
+      ],
+      "materiasEnCurso": [
+        {
+          "lengua": {
+            "estado": "regular"
+          }
+        },
+        {
+          "lengua": {
+            "estado": "regular"
+          }
+        }
+      ]
+    },
+    {
+      "nombre": "pepe",
+      "edad": 15,
+      "materiasAprobadas": [],
+      "materiasEnCurso": []
+    }
+  ],
+  "profesores": {}
+}
