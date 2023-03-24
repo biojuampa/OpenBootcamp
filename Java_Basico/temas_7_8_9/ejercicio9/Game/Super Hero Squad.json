@@ -2,19 +2,21 @@
   "squadName": "Super Hero Squad",
   "members": [
     {
-      "name": "Molecule Man",
+      "name": "Eternal Flame",
       "powers": [
-        "Radiation resistance",
-        "Turning tiny",
-        "Radiation blast"
+        "Immortality",
+        "Heat Immunity",
+        "Inferno",
+        "Teleportation",
+        "Interdimensional travel"
       ]
     },
     {
-      "name": "Molecule Man",
+      "name": "Madame Uppercut",
       "powers": [
-        "Radiation resistance",
-        "Turning tiny",
-        "Radiation blast"
+        "Million tonne punch",
+        "Damage resistance",
+        "Superhuman reflexes"
       ]
     },
     {

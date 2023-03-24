@@ -43,7 +43,7 @@ public class GameMain {
             for (String member: memberPowers.keySet()) {
                 file.println("1. **" + member + "**");
                 for (String power: memberPowers.get(member))
-                    file.println("  * _" + power + "_");
+                    file.println("    * _" + power + "_");
             }
             
             file.close();
@@ -65,19 +65,17 @@ public class GameMain {
             PrintStream fileJSON = new PrintStream(squadName + ".json");
             
             JSONObject jsonMain = new JSONObject();
-            JSONObject member = new JSONObject();
+            //JSONObject member = new JSONObject();
             JSONArray miembros = new JSONArray();
 
             for (String name: memberPowers.keySet()) {
-                member.put("name", name);
-                member.put("powers", memberPowers.get(name));
-                miembros.put(member);
-                System.out.println(member);
-                System.out.println("\n-------------------------------------------------------------\n");
-                System.out.println(miembros.toString(2));
-                System.out.println("\n-------------------------------------------------------------\n");
+                do { // uso el do-while con el único objetivo de crear un nuevo objeto JSONObject en cada iteración del foreach
+                    JSONObject member = new JSONObject();
+                    member.put("name", name);
+                    member.put("powers", memberPowers.get(name));
+                    miembros.put(member);
+                } while (false);
             }
-           
 
             jsonMain.put("squadName", squadName);
             jsonMain.put("members", miembros);
@@ -109,4 +107,3 @@ public class GameMain {
     
     }
 }
-
