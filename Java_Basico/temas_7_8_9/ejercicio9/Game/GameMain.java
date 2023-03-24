@@ -4,7 +4,7 @@ import java.net.*;
 import org.json.*;
 
 
-public class Main {
+public class GameMain {
     public static void main(String[] args) {
    
         try {
@@ -47,6 +47,43 @@ public class Main {
             }
             
             file.close();
+
+            PrintStream fileCSV = new PrintStream(squadName + ".csv");
+
+            file.println("Member,Powers");
+            for (String name: memberPowers.keySet()) {
+                String powers = "";
+                for (String power: memberPowers.get(name)) {
+                    powers += power + ",";
+                }
+
+                fileCSV.println(name + ",\"" + powers + "\"");
+            }
+
+            fileCSV.close();
+
+            PrintStream fileJSON = new PrintStream(squadName + ".json");
+            
+            JSONObject jsonMain = new JSONObject();
+            JSONObject member = new JSONObject();
+            JSONArray miembros = new JSONArray();
+
+            for (String name: memberPowers.keySet()) {
+                member.put("name", name);
+                member.put("powers", memberPowers.get(name));
+                miembros.put(member);
+                System.out.println(member);
+                System.out.println("\n-------------------------------------------------------------\n");
+                System.out.println(miembros.toString(2));
+                System.out.println("\n-------------------------------------------------------------\n");
+            }
+           
+
+            jsonMain.put("squadName", squadName);
+            jsonMain.put("members", miembros);
+            fileJSON.println(jsonMain.toString(2));
+
+            fileJSON.close();
 
         } catch (FileNotFoundException e) {
 
