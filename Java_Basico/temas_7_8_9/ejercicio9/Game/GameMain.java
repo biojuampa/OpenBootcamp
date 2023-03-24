@@ -50,7 +50,7 @@ public class GameMain {
 
             PrintStream fileCSV = new PrintStream(squadName + ".csv");
 
-            file.println("Member,Powers");
+            fileCSV.println("Member,Powers");
             for (String name: memberPowers.keySet()) {
                 String powers = "";
                 for (String power: memberPowers.get(name)) {
