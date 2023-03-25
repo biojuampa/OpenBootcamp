@@ -8,11 +8,17 @@ public class GameMain {
         try {
 
             URL url = new URL("https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json");
-            GameData gd = new GameData(url);
+            GameData gdUrl = new GameData(url);
 
-            gd.saveToCSV();
-            gd.saveToMD();
-            gd.saveToJSON();
+            gdUrl.saveToCSV();
+            gdUrl.saveToMD();
+            gdUrl.saveToJSON();
+
+            GameData gdFile = new GameData("superheroes.json");
+            
+            gdFile.saveToCSV();
+            gdFile.saveToMD();
+            gdFile.saveToJSON();
 
         } catch (MalformedURLException e) {
  

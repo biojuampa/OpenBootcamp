@@ -1,0 +1,32 @@
+{
+  "squadName": "Everest Squad",
+  "members": [
+    {
+      "name": "Ant-Man",
+      "powers": [
+        "Million tonne punch",
+        "Inferno",
+        "Radiation fire"
+      ]
+    },
+    {
+      "name": "Madame Strip",
+      "powers": [
+        "Million tonne punch",
+        "Damage resistance",
+        "Superhuman reflexes",
+        "Heat Immunity"
+      ]
+    },
+    {
+      "name": "Eternal Flat",
+      "powers": [
+        "Immortality",
+        "Heat Immunity",
+        "Inferno",
+        "Teleportation",
+        "Interdimensional travel"
+      ]
+    }
+  ]
+}

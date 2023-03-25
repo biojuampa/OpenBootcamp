@@ -1,0 +1,42 @@
+{
+  "squadName" : "Everest Squad",
+  "homeTown" : "Down Town",
+  "formed" : 2019,
+  "secretBase" : "Twin Peaks Tower",
+  "active" : true,
+  "members" : [
+    {
+      "name" : "Ant-Man",
+      "age" : 23,
+      "secretIdentity" : "John Doe",
+      "powers" : [
+        "Million tonne punch",
+        "Inferno",
+        "Radiation fire"
+      ]
+    },
+    {
+      "name" : "Madame Strip",
+      "age" : 43,
+      "secretIdentity" : "Mila Kunis",
+      "powers" : [
+        "Million tonne punch",
+        "Damage resistance",
+        "Superhuman reflexes",
+        "Heat Immunity"
+      ]
+    },
+    {
+      "name" : "Eternal Flat",
+      "age" : 1000000,
+      "secretIdentity" : "Megan Fox",
+      "powers" : [
+        "Immortality",
+        "Heat Immunity",
+        "Inferno",
+        "Teleportation",
+        "Interdimensional travel"
+      ]
+    }
+  ]
+}
