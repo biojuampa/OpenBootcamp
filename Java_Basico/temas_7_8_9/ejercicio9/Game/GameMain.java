@@ -1,9 +1,3 @@
-import java.util.*;
-import java.io.*;
-import java.net.*;
-import org.json.*;
-
-
 public class GameMain {
     public static void main(String[] args) {
    
@@ -12,26 +6,6 @@ public class GameMain {
             URL url = new URL("https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json");
             InputStream iStream = url.openStream();
 
-            JSONTokener tokener = new JSONTokener(iStream);  
-            JSONObject jobj = new JSONObject(tokener);
-
-            String squadName = jobj.getString("squadName");
-            HashMap<String, ArrayList<String>> memberPowers = new HashMap<>();
-    
-            JSONArray members = jobj.getJSONArray("members");
-            for (Object memberObj: members) {
-                JSONObject member = (JSONObject)memberObj;
-                String memberName = member.getString("name");
-                ArrayList<String> powersList = new ArrayList<>();
-                
-                JSONArray powers = member.getJSONArray("powers");
-                for (Object power: powers) {
-                    powersList.add((String)power);
-                }
-
-                memberPowers.put(memberName, powersList);
-
-            }
 
             PrintStream file = new PrintStream(squadName + ".md");
             
