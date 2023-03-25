@@ -13,12 +13,14 @@ public class GameMain {
             gdUrl.saveToCSV();
             gdUrl.saveToMD();
             gdUrl.saveToJSON();
+            gdUrl.showData();
 
             GameData gdFile = new GameData("superheroes.json");
             
             gdFile.saveToCSV();
             gdFile.saveToMD();
             gdFile.saveToJSON();
+            gdFile.showData();
 
         } catch (MalformedURLException e) {
  

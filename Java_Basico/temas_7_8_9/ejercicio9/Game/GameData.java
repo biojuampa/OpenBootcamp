@@ -116,6 +116,20 @@ public class GameData {
     }
 
     public void showData() {
+        
+        System.out.println("\n----------------------------------------");
+        System.out.println("Nombre del escuadrón: " + this.squadName);
+        System.out.println("----------------------------------------");
+        System.out.println("\nPoderes de sus miembros:");
+        
+        for (String name: this.memberPowers.keySet()) {
+            System.out.println("\n\t* " + name);
+            for (String power: this.memberPowers.get(name)) {
+                System.out.println("\t\t- " + power);
+            }
+        }
+
+        System.out.println();
 
     }
 
