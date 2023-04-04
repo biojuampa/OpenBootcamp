@@ -1,7 +1,7 @@
 /*
  * HerenciaVersion2.java
  * 
- * Copyright 2022 Juan Pablo Camussi <jcamussi@gmail.com>
+ * Copyright 2022 Juan Pablo Camussi
  * 
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
