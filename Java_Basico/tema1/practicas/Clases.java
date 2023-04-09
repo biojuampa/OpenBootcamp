@@ -13,7 +13,8 @@ public class Clases {
     }
 }
 
-public class Habitacion {
+class Habitacion {
+
     // Atributos de Clase
     private int personas;
 
@@ -32,12 +33,17 @@ public class Habitacion {
     }
     
     public void restarPersona() {
-        if (this.personas > 1)
+        if (this.personas > 0)
             this.personas--;
     }
 
     public int getPersonas() {
         return this.personas;
     }
+
+    public void setPersonas(int personas) {
+        this.personas = personas;
+    }
+
 }
 
