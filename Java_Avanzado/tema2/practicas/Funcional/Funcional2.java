@@ -10,7 +10,7 @@ public class Funcional2 {
         algunosNumeros();
         algunosNumeros2();
 
-        System.out.println("Fibonacci(5) = " + fibonacci(5));
+        System.out.println("Suma primeros 5 números = " + sumaPrimerosN(5));
         System.out.println("Factorial(5) = " + factorial(5));
     }
 
@@ -36,25 +36,30 @@ public class Funcional2 {
 
     }
 
-    private static long fibonacci(int n) {
+    private static long sumaPrimerosN(int n) {
 
-        ArrayList<Integer> listaFibo = new ArrayList<>();
-        for (int i=0; i<n; i++)
-            listaFibo.add(i+1);
+        ArrayList<Integer> listaNumeros = new ArrayList<>();
 
-        long fibo = listaFibo.stream().reduce(1, (x,y) -> x+y);
+        // Cargo el array
+        for (int i=1; i<=n; i++)
+            listaNumeros.add(i);
 
-        return fibo;
+        long suma = listaNumeros.stream().reduce(0, (x,y) -> x+y);
+
+        return suma;
 
     }
 
     private static long factorial(int n) {
 
         Integer[] numeros = new Integer[n];
+
+        // Cargo el array
         for (int i=0; i<n; i++)
             numeros[i] = i + 1;
 
         long factorial = Arrays.stream(numeros).reduce(1, (x,y) -> x*y);
+
         return factorial;
 
     }
