@@ -11,20 +11,20 @@ public class FuncionalConStreams {
     }
 
     public void listarNombres() {
-        nombres.stream().forEach(System.out::println); // (x) -> System.out.println(x) = System.out::println
+        nombres.forEach(System.out::println); // (x) -> System.out.println(x) = System.out::println
     }
 
     public void listarNombresComoTitulo() {
         nombres.stream()
-                .map(x -> x.toLowerCase())
+                .map(String::toLowerCase)   // x -> x.toLowerCase() = String::toLowerCase
                 .filter(x -> x.startsWith("o"))
-                .map(x -> toTitleCase(x))   // función creada por mí
+                .map(x -> toTitleCase(x))   // FuncionalConStreams::toTitleCase = x -> toTitleCase(x) // función creada por mí
                 .forEach(System.out::println)
         ;
     }
 
     public static String toTitleCase(String str) {
-        String words = new String();
+
         ArrayList<Character> characters = new ArrayList<>();
 
         boolean firstChar = true;
@@ -43,10 +43,11 @@ public class FuncionalConStreams {
 
         }
 
+        StringBuilder words = new StringBuilder();
         for (char c: characters)
-            words += c;
+            words.append(c);
 
-        return words;
+        return words.toString();
     }
 
 }

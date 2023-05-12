@@ -5,12 +5,16 @@ public class PruebaStreams {
 
     public static void main(String[] args) {
 
+        ArrayList<Double> flotantes = new ArrayList<>();
+        IntStream.rangeClosed(1,10).forEach(x -> flotantes.add(x/Math.random()));
+        flotantes.forEach(f -> System.out.print(f + ", "));
+
         Integer suma = sumaPrimerosPares(50);
         System.out.println("Suma primeros pares hasta 50 = " + suma);
 
         imprimePrimerosPares(10);
 
-        Integer fact = factorial(15);
+        int fact = factorial(15);
         System.out.println("Factorial de 15 = " + fact);
 
     }
@@ -33,7 +37,7 @@ public class PruebaStreams {
 
     }
 
-    private static Integer factorial(int n) {
+    private static int factorial(int n) {
 
         return IntStream.rangeClosed(1,n)
                 .reduce(1, (x,y) -> x*y)

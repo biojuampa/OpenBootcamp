@@ -1,10 +1,17 @@
+/*
+*  En este ejercicio básicamente tengo una colección de funciones
+*  que hacen exactamente lo mismo, sumar los primeros N números,
+*  pero de distintas formas. Aplico lo que he visto hasta ahora en
+*  java.
+*/
+
 import java.util.stream.IntStream;
 
 public class Sumas {
 
     public static void main(String[] args) {
 
-        System.out.println("Suma iterativa: " + sumaPrimerosN(5));
+        System.out.println("Suma iterativa: " + sumaIterativaPrimerosN(5));
         System.out.println("Suma recursiva: " + sumaRecursivaPrimerosN(5));
         System.out.println("Suma head recursion: " + sumaHeadRecursion(5));
         System.out.println("Suma tail recursion: " + sumaTailRecursion(5));
@@ -13,15 +20,15 @@ public class Sumas {
     }
 
     // Suma iterativa
-    private static long sumaPrimerosN(int n) {
+    private static long sumaIterativaPrimerosN(int n) {
         long total = 0;
-        for (int i = 0; i <= n; i++)
+        for (int i = 1; i <= n; i++)
             total += i;
 
         return total;
     }
 
-    // Suma recursiva de los primeros n números
+    // Suma recursiva de los primeros n números (sería también tail recursion)
     private static long sumaRecursivaPrimerosN(int n) {
         if (n == 1) return 1L;
         return n + sumaRecursivaPrimerosN(n-1);
@@ -34,6 +41,7 @@ public class Sumas {
         sumaHeadRecursion(n-1);
         sumaHead += n;
         return sumaHead;
+//        return sumaHeadRecursion(n-1) + n;
     }
 
     // Suma recursiva por cola (tail recursion)
@@ -43,6 +51,7 @@ public class Sumas {
         sumaTail += n;
         sumaTailRecursion(n-1);
         return sumaTail;
+//        return n + sumaTailRecursion(n-1);
     }
 
     private static long sumaFuncional(int n) {

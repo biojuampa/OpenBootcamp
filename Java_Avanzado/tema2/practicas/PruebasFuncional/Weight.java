@@ -10,7 +10,6 @@ public class Weight {
     public static void main(String[] args) {
         System.out.println("My weight on Earth: " + weightOnEarth.apply(60.0));
         System.out.println("My weight on Mars: " + weightOnMars.apply(60.0));
-
         System.out.println("Mi peso actual: " + weight.apply(9.81).apply(8.0));
 
     }
