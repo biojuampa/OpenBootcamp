@@ -1,6 +1,6 @@
 package Factory;
 
-public class PriceGB implements Price {
+public class PriceGBP implements Price {
     @Override
     public float getPrice() {
         return 3.25f;

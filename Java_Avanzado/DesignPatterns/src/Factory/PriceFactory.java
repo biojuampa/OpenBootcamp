@@ -9,7 +9,7 @@ public class PriceFactory {
             price = new PriceEUR();
             System.out.println("Precio España");
         } else if (country.equalsIgnoreCase("UK")) {
-            price = new PriceGB();
+            price = new PriceGBP();
             System.out.println("Precio Gran Bretaña");
         } else {
             price = new PriceUSD();

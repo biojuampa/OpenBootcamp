@@ -5,8 +5,8 @@ public class Main {
         PriceFactory priceEU = new PriceFactory("España");
         System.out.println(priceEU.getPrice());
 
-        PriceFactory priceGB = new PriceFactory("UK");
-        System.out.println(priceGB.getPrice());
+        PriceFactory priceGBP = new PriceFactory("UK");
+        System.out.println(priceGBP.getPrice());
 
         PriceFactory priceUSA = new PriceFactory("USA");
         System.out.println(priceUSA.getPrice());
