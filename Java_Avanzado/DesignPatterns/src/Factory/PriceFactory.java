@@ -7,14 +7,14 @@ public class PriceFactory {
     public PriceFactory(String country) {
         if (country.equalsIgnoreCase("españa")) {
             price = new PriceEUR();
-            System.out.println("País España");
+            System.out.println("Precio España");
         } else {
             price = new PriceUSD();
-            System.out.println("Otro País");
+            System.out.println("Precio otro país");
         }
     }
 
-    public Price getPrice() {
-        return price;
+    public float getPrice() {
+        return price.getPrice();
     }
 }
