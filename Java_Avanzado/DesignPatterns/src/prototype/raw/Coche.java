@@ -5,8 +5,6 @@ public class Coche {
     private String modelo;
     private int puertas;
 
-    public Coche() {}
-
     public Coche clonar() {
         Coche clon = new Coche();
 

@@ -1,20 +1,12 @@
 package prototype.cloneable;
 
-public class Coche {
+public class Coche implements Cloneable {
     private String marca;
     private String modelo;
     private int puertas;
 
-    public Coche() {}
-
-    public Coche clonar() {
-        Coche clon = new Coche();
-
-        clon.marca = marca;
-        clon.modelo = modelo;
-        clon.puertas = puertas;
-
-        return clon;
+    public Coche clonar() throws CloneNotSupportedException {
+        return (Coche)this.clone();
     }
 
     public String getMarca() {
