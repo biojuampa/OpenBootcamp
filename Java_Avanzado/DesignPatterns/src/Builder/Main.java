@@ -17,6 +17,16 @@ public class Main {
                 .build()
                 ;
 
+        StringBuilder cadena = new StringBuilder()
+                .append("\n")
+                .append("Hola ")
+                .append("amigos ")
+                .append("del ")
+                .append("curso.")
+                .append("\n")
+        ;
+        System.out.println(cadena);
+
         System.out.println("Marca: " + coche.getMarca());
         System.out.println("Combustible: " + coche.getMotor());
         System.out.println("Modelo: " + coche.getModelo());
