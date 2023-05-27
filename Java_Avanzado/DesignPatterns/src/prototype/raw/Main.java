@@ -1,4 +1,4 @@
-package Prototype;
+package prototype.raw;
 
 public class Main {
     public static void main(String[] args) {

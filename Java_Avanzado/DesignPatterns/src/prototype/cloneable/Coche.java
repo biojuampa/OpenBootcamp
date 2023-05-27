@@ -1,4 +1,4 @@
-package Prototype;
+package prototype.cloneable;
 
 public class Coche {
     private String marca;

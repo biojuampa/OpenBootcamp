@@ -1,4 +1,4 @@
-package Factory;
+package factory;
 
 public class PriceFactory {
     private Price price;
