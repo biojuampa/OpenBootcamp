@@ -7,7 +7,7 @@ public class Singleton {
     private static Singleton singleton;
 
     // Constructor
-    private Singleton() {}
+    private Singleton() {} // Esto lo hace Víctor pero no es necesario
 
     // Métodos
     public static Singleton getInstance() {
