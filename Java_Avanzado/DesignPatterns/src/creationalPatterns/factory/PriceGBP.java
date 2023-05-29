@@ -1,4 +1,4 @@
-package factory;
+package creationalPatterns.factory;
 
 public class PriceGBP implements Price {
     @Override

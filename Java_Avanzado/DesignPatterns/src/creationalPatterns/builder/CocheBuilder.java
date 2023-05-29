@@ -1,4 +1,4 @@
-package builder;
+package creationalPatterns.builder;
 
 public class CocheBuilder {
     private Coche coche;

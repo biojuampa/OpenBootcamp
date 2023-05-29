@@ -1,4 +1,4 @@
-package factory;
+package creationalPatterns.factory;
 
 public class PriceFactory {
     private Price price;

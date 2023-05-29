@@ -1,12 +1,18 @@
-package prototype.cloneable;
+package creationalPatterns.prototype.raw;
 
-public class Coche implements Cloneable {
+public class Coche {
     private String marca;
     private String modelo;
     private int puertas;
 
-    public Coche clonar() throws CloneNotSupportedException {
-        return (Coche)this.clone();
+    public Coche clonar() {
+        Coche clon = new Coche();
+
+        clon.marca = marca;
+        clon.modelo = modelo;
+        clon.puertas = puertas;
+
+        return clon;
     }
 
     public String getMarca() {

@@ -1,4 +1,4 @@
-package prototype.raw;
+package creationalPatterns.prototype.raw;
 
 public class Main {
     public static void main(String[] args) {

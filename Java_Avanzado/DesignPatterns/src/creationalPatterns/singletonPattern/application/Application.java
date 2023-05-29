@@ -1,4 +1,4 @@
-package singletonPattern.application;
+package creationalPatterns.singletonPattern.application;
 
 public class Application {
     private static Application application;
