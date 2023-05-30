@@ -3,7 +3,8 @@ package creationalPatterns.factory;
 public class PriceFactory {
     private Price price;
 
-    private PriceFactory() {}
+    public PriceFactory() {}   // No es necesario, pero lo dejo porque Víctor lo hace
+
     public PriceFactory(String country) {
         if (country.equalsIgnoreCase("españa")) {
             price = new PriceEUR();
