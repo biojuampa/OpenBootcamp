@@ -7,9 +7,9 @@ public class Coche {
     private int potencia;
     private int puertas;
 
-    public Coche(String marca) {
-        this.marca = marca;
-    }
+//    public Coche(String marca) {
+//        this.marca = marca;
+//    }
 
     public String getMarca() {
         return marca;

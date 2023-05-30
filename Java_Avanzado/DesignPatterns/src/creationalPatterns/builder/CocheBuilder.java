@@ -4,7 +4,8 @@ public class CocheBuilder {
     private Coche coche;
 
     public CocheBuilder(String marca) {
-        this.coche = new Coche(marca);
+        coche = new Coche();
+        coche.setMarca(marca);
     }
 
     public CocheBuilder setMotor(String motor) {
