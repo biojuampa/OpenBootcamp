@@ -9,10 +9,10 @@ public class BasicPhone implements Phone {
     }
 
     private void gsm() {
-        System.out.println("    -> Tengo GSM");
+        System.out.println("  BasicPhone -> Tengo GSM");
     }
 
     private void sms(){
-        System.out.println("    -> Tengo SMS");
+        System.out.println("  BasicPhone -> Tengo SMS");
     }
 }
