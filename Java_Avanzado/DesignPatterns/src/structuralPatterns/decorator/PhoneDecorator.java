@@ -1,6 +1,8 @@
 package structuralPatterns.decorator;
 
-public class PhoneDecorator implements Phone {
+// Yo considero que esta clase conectora intermedia
+// debería ser abstracta. Pero Víctor no lo hace así.
+abstract public class PhoneDecorator implements Phone {
     private Phone phone;
 
     public PhoneDecorator(Phone phone) {
