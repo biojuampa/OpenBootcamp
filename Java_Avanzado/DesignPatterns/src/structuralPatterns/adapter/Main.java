@@ -10,6 +10,8 @@ public class Main {
         encender(lampara);
         encender(lightbulb);
 
+        apagar(lampara);
+
         System.out.println();
 
         System.out.println("Horno encendido: " + estaEncendido(horno));
