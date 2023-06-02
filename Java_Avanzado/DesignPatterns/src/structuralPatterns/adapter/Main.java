@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Horno horno = new Horno();
         Lampara lampara = new Lampara();
-        PowerAdapter lightbulb = new PowerAdapter();
+        LightbulbAdapter lightbulb = new LightbulbAdapter();
 
         encender(horno);
         encender(lampara);

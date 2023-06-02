@@ -1,6 +1,6 @@
 package structuralPatterns.adapter;
 
-public class PowerAdapter implements Enchufable {
+public class LightbulbAdapter implements Enchufable {
     private final Lightbulb lightbulb = new Lightbulb();
 
     @Override
