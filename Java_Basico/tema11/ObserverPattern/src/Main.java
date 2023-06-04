@@ -16,16 +16,16 @@ public class Main {
     }
 
     private static class Emisor {
-        private final ArrayList<Receptor> receptores = new ArrayList<>();
+        private final ArrayList<Mensajero> receptores = new ArrayList<>();
 
-        public void meteReceptor(Receptor receptor) {
+        public void meteReceptor(Mensajero receptor) {
             receptores.add(receptor);
         }
 
         public void saluda() {
             System.out.println("¡Hola desde Emisor!");
 
-            for (Receptor receptor : receptores) {
+            for (Mensajero receptor : receptores) {
                 receptor.hanSaludado();
             }
         }
