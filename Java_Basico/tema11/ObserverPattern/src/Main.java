@@ -1,5 +1,3 @@
-import org.w3c.dom.stylesheets.MediaList;
-
 import java.util.ArrayList;
 
 public class Main {
@@ -13,12 +11,12 @@ public class Main {
         emisor.saluda();
     }
 
-    public interface Mensajero {
+    private interface Mensajero {
         void hanSaludado();
     }
 
-    public static class Emisor {
-        private ArrayList<Receptor> receptores = new ArrayList<>();
+    private static class Emisor {
+        private final ArrayList<Receptor> receptores = new ArrayList<>();
 
         public void meteReceptor(Receptor receptor) {
             receptores.add(receptor);
@@ -33,7 +31,7 @@ public class Main {
         }
     }
 
-    public static class Receptor implements Mensajero {
+    private static class Receptor implements Mensajero {
         @Override
         public void hanSaludado() {
             System.out.println("Hola en clase receptor " + this);
