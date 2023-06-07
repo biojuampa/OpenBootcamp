@@ -9,7 +9,8 @@ public class Main {
         users.addUser(new User("Usuario 3", 44));
 
         while (users.hasMore()) {
-            System.out.println(users.next().getName());
+            User user = users.next();
+            System.out.println(user.getName() + " tiene " + user.getAge() + " años.");
         }
 
         users.addUser(new User("Usuario 4", 33));
@@ -18,7 +19,8 @@ public class Main {
         System.out.println();
         users.reset();
         while (users.hasMore()) {
-            System.out.println(users.next().getName());
+            User user = users.next();
+            System.out.println(user.getName() + " tiene " + user.getAge() + " años.");
         }
 
     }

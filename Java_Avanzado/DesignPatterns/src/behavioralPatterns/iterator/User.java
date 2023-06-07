@@ -1,8 +1,8 @@
 package behavioralPatterns.iterator;
 
 public class User {
-    private String name;
-    private int age;
+    private final String name;
+    private final int age;
 
     public User(String name, int age) {
         this.name = name;
