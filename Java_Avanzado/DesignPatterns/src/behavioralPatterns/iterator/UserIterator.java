@@ -1,6 +1,6 @@
 package behavioralPatterns.iterator;
 
-public interface UsersIterator {
+public interface UserIterator {
     User next();
     void reset();
     boolean hasMore();

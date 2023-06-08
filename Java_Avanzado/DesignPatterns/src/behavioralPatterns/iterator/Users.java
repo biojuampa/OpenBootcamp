@@ -2,7 +2,7 @@ package behavioralPatterns.iterator;
 
 import java.util.ArrayList;
 
-public class Users implements UsersIterator {
+public class Users implements UserIterator {
     private int index = 0;
     private final ArrayList<User> users = new ArrayList<>();
 
