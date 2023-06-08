@@ -3,7 +3,7 @@ package behavioralPatterns.observer;
 import java.util.ArrayList;
 
 public class Emisor {
-    private ArrayList<Receptor> receptores = new ArrayList<>();
+    private final ArrayList<Receptor> receptores = new ArrayList<>();
 
     public void agregaReceptor(Receptor receptor) {
         receptores.add(receptor);
