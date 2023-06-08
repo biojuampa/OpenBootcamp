@@ -7,8 +7,8 @@ public abstract class Colleague {
 //        this.mediator = mediator;
 //    }
 
-    // Vítor usa este setter para el mediador, yo prefiero
-    // hacerlo directamente en el constructor.
+    // Vítor usa este setter para el mediador, yo creía que era
+    // mejor hacerlo directamente en el constructor, pero estaba equivocado.
     public void setMediator(Mediator mediator) {
         this.mediator = mediator;
     }
