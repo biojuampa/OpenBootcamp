@@ -5,7 +5,6 @@ public abstract class Mediator {
     // yo creo que sería mejor tenerlo en la clase abstracta.
 
 //    private ArrayList<Colleague> colleagues = new ArrayList<>();
-
     public abstract void record(Colleague colleague);
     public abstract void forward(Colleague colleague);
 }

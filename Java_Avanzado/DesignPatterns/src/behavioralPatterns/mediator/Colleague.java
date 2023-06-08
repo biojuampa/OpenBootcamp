@@ -1,7 +1,7 @@
 package behavioralPatterns.mediator;
 
 public abstract class Colleague {
-    private Mediator mediator;
+    protected Mediator mediator;
 
 //    public Colleague(Mediator mediator) {
 //        this.mediator = mediator;
