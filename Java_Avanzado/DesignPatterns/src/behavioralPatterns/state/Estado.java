@@ -1,7 +1,7 @@
 package behavioralPatterns.state;
 
 public abstract class Estado {
-    private Telefono telefono;
+    protected Telefono telefono;
 
     public Estado(Telefono telefono) {
         this.telefono = telefono;

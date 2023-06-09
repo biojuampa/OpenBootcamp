@@ -7,16 +7,17 @@ public class EstadoDesbloqueado extends Estado {
 
     @Override
     public String desbloquear() {
-        return null;
+        return "desbloquear(): Ya estaba desbloqueado.";
     }
 
     @Override
     public String abrirCamara() {
-        return null;
+        telefono.cambiaEstado(new EstadoCamaraAbierta(telefono));
+        return "abrirCamara(): Cámara abierta";
     }
 
     @Override
     public String hacerFoto() {
-        return null;
+        return "hacerFoto(): Primero debes abrir la cámara.";
     }
 }

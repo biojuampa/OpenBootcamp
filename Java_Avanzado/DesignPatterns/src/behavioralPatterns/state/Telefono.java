@@ -1,7 +1,7 @@
 package behavioralPatterns.state;
 
 public class Telefono {
-    private Estado estado;
+    public Estado estado;
 
     public Telefono() {
         estado = new EstadoBloqueado(this);
