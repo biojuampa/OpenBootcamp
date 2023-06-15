@@ -25,7 +25,7 @@ public class ConcreteMediator extends Mediator {
                 colleague.listen();
             }
 //            if (colleague.equals(speaker)) return;
-//            colleague.escucha();
+//            colleague.listen();
         }
     }
 }

@@ -4,7 +4,7 @@ public class ConcreteColleague3 extends Colleague {
     @Override
     public void speak() {
         System.out.println("Colleague3: he enviado un mensaje.");
-        mediator.forward(this);
+        getMediator().forward(this);
     }
 
     @Override
