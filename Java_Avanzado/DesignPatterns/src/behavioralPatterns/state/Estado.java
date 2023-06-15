@@ -1,10 +1,14 @@
 package behavioralPatterns.state;
 
 public abstract class Estado {
-    protected Telefono telefono;
+    private Telefono telefono;
 
     public Estado(Telefono telefono) {
         this.telefono = telefono;
+    }
+
+    public Telefono getTelefono() {
+        return telefono;
     }
 
     public abstract String desbloquear();

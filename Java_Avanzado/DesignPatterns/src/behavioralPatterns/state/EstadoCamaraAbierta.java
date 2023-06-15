@@ -17,7 +17,9 @@ public class EstadoCamaraAbierta extends Estado {
 
     @Override
     public String hacerFoto() {
-        telefono.cambiaEstado(new EstadoHacerFoto(telefono));
-        return "hacerFoto(): Se tomará la foto ...";
+        getTelefono().cambiaEstado(new EstadoBloqueado(getTelefono()));
+        return "hacerFoto(): Se ha tomado foto.\n" +
+               "             Teléfono bloqueado."
+                ;
     }
 }

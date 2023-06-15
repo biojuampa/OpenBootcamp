@@ -12,7 +12,7 @@ public class EstadoDesbloqueado extends Estado {
 
     @Override
     public String abrirCamara() {
-        telefono.cambiaEstado(new EstadoCamaraAbierta(telefono));
+        getTelefono().cambiaEstado(new EstadoCamaraAbierta(getTelefono()));
         return "abrirCamara(): Cámara abierta";
     }
 
