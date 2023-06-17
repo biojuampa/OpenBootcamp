@@ -23,8 +23,8 @@ public class Main {
         System.out.println(IfAnidados.mayor3(valor1, valor2));
 
         System.out.println(IfAnidados.menor1(valor1, valor2));
-        System.out.println(IfAnidados.menor1(valor1, valor2));
-        System.out.println(IfAnidados.menor1(valor1, valor2));
+        System.out.println(IfAnidados.menor2(valor1, valor2));
+        System.out.println(IfAnidados.menor3(valor1, valor2));
     }
 
     private static void llamaConstructores() {
