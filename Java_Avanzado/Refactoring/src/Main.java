@@ -38,13 +38,13 @@ public class Main {
                 255)
                 ;
 
-        ConstructorCorto constructorCorto = new ConstructorCorto("Nombre")
+        ConstructorLargoBuilder constructorLargoBuilder = new ConstructorLargoBuilder("Nombre")
                 .marca("Marca")
                 .cantidad(120)
                 .modelo("Modelo")
                 ;
 
         System.out.println(constructorLargo);
-        System.out.println(constructorCorto);
+        System.out.println(constructorLargoBuilder);
     }
 }

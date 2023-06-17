@@ -1,4 +1,4 @@
-public class ConstructorCorto {
+public class ConstructorLargoBuilder {
     private final String nombre;
     private String marca;
     private String modelo;
@@ -8,36 +8,36 @@ public class ConstructorCorto {
     private int cantidad;
 
     // Constructor corto usando el patrón de diseño builder
-    public ConstructorCorto(String nombre) {
+    public ConstructorLargoBuilder(String nombre) {
         this.nombre = nombre;
     }
 
-    public ConstructorCorto marca(String marca) {
+    public ConstructorLargoBuilder marca(String marca) {
         this.marca = marca;
         return this;
     }
 
-    public ConstructorCorto modelo(String modelo) {
+    public ConstructorLargoBuilder modelo(String modelo) {
         this.modelo = modelo;
         return this;
     }
 
-    public ConstructorCorto anio(String anio) {
+    public ConstructorLargoBuilder anio(String anio) {
         this.anio = anio;
         return this;
     }
 
-    public ConstructorCorto descripcionCorta(String descripcionCorta) {
+    public ConstructorLargoBuilder descripcionCorta(String descripcionCorta) {
         this.descripcionCorta = descripcionCorta;
         return this;
     }
 
-    public ConstructorCorto precio(double precio) {
+    public ConstructorLargoBuilder precio(double precio) {
         this.precio = precio;
         return this;
     }
 
-    public ConstructorCorto cantidad(int cantidad) {
+    public ConstructorLargoBuilder cantidad(int cantidad) {
         this.cantidad = cantidad;
         return this;
     }
@@ -73,7 +73,7 @@ public class ConstructorCorto {
 
     @Override
     public String toString() {
-        return "ConstructorCorto{" +
+        return "ConstructorLargoBuilder{" +
                 "nombre='" + nombre + '\'' +
                 ", marca='" + marca + '\'' +
                 ", modelo='" + modelo + '\'' +
