@@ -1,10 +1,20 @@
 public class StringArraysIterator {
     public static void main(String[] args) {
+//        StringsMemory words = new StringsMemory();
+//
+//        words.addNewWord("pablito");
+//        words.addNewWord("clavó");
+//        words.addNewWord("un");
+//        words.addNewWord("clavito");
+//
+//        while (words.hasMore())
+//            System.out.println(words.next());
 
-        String[] words = {"pablito", "clavó", "un", "clavito"};
+        StringsFileDisk words = new StringsFileDisk();
 
-        for (String word: words)
-            System.out.println(word);
+        words.addNewWord("Hola");
+        words.addNewWord(" ");
+        words.addNewWord("Mundo!");
 
     }
 }
