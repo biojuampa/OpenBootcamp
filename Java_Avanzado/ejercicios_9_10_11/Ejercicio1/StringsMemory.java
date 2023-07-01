@@ -4,12 +4,16 @@ public class StringsMemory implements StringsIterator {
     private int index = 0;
     private ArrayList<String> words = new ArrayList<>();
 
+    @Override
     public void addNewWord(String word) {
         words.add(word);
     }
 
     @Override
     public String next() {
+        if (index >= words.size())
+            return null;
+
         index++;
         return words.get(index-1);
     }
