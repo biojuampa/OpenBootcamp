@@ -1,6 +1,4 @@
-import java.security.spec.ECField;
-
-public class StringArraysIterator {
+public class StringArraysMain {
     public static void main(String[] args) {
         StringsMemory words = new StringsMemory();
 
