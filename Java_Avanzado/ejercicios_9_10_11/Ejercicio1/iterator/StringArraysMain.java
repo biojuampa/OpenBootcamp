@@ -1,3 +1,5 @@
+package iterator;
+
 public class StringArraysMain {
     public static void main(String[] args) {
         StringsMemory wordsMem = new StringsMemory();

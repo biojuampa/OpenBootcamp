@@ -1,5 +1,6 @@
+package iterator;
+
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class StringsMemory implements StringsIterator {
     private int index = 0;
