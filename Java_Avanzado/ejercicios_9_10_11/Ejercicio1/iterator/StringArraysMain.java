@@ -12,6 +12,7 @@ public class StringArraysMain {
         while (wordsMem.hasMore())
             System.out.println(wordsMem.next());
 
+        // busco el fallo
         wordsMem.next();
         wordsMem.next();
         wordsMem.next();
@@ -25,6 +26,7 @@ public class StringArraysMain {
         while (wordsDisk.hasMore())
             System.out.println(wordsDisk.next());
 
+        // busco el fallo
         wordsDisk.next();
     }
 }
