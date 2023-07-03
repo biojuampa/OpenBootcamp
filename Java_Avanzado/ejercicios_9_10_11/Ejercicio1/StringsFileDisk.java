@@ -2,6 +2,7 @@ import java.io.BufferedWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
+import java.util.NoSuchElementException;
 import java.util.stream.Stream;
 
 public class StringsFileDisk implements StringsIterator {
@@ -10,8 +11,14 @@ public class StringsFileDisk implements StringsIterator {
     private int index = 0;
     private int totalLines = 0;
 
+
+    /* TODO: Quizás en vez de crear en el constructor el archivo vacío,
+    *   borrando el existente, podría leer el archivo existente,
+    *   contar la cantidad de líneas y setear la variable totalLines
+    *   con ellas.
+    */
     public StringsFileDisk() {
-        // Crear el archivo words.txt vacío (aunque exista)
+        // Crear el archivo words.txt vacío (si existe, lo sobreescribo)
         try {
             if (Files.exists(RUTA_ARCHIVO))
                 Files.delete(RUTA_ARCHIVO);
@@ -54,8 +61,10 @@ public class StringsFileDisk implements StringsIterator {
 
             index++;
 
+        } catch (NoSuchElementException e) {
+            System.out.println("ERROR: No hay más datos.");
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("Error leyendo los datos: " + e.getMessage());
         }
 
         return line;

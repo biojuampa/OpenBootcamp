@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class StringsMemory implements StringsIterator {
     private int index = 0;
@@ -11,11 +12,18 @@ public class StringsMemory implements StringsIterator {
 
     @Override
     public String next() {
-        if (index >= words.size())
-            return null;
+        String word = "";
 
-        index++;
-        return words.get(index-1);
+        try {
+            word = words.get(index);
+            index++;
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println("ERROR: No quedan más elementos.");
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+
+        return word;
     }
 
     @Override
