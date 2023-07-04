@@ -3,13 +3,17 @@ package mediator;
 import java.util.ArrayList;
 
 public abstract class Colleague {
-    protected Mediator mediator;
+    private Mediator mediator;
 
-    public void setMediator(Mediator mediator) {
+    protected void setMediator(Mediator mediator) {
         this.mediator = mediator;
     };
 
-    abstract public void addNewWord(String word);
+    public void addNewWord(String word) {
+        includeNewWord(word);
+        mediator.sendNewWord(this, word);
+    }
+
     abstract protected void includeNewWord(String word);
     abstract public ArrayList<String> getAll();
 }

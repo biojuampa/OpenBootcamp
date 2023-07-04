@@ -10,11 +10,11 @@ public class ArrayListColleague extends Colleague {
 //        System.out.println("hola desde ArrayListColleague");;
 //    }
 
-    @Override
-    public void addNewWord(String word) {
-        includeNewWord(word);
-        mediator.sendNewWord(this, word);
-    }
+//    @Override
+//    public void addNewWord(String word) {
+//        includeNewWord(word);
+//        mediator.sendNewWord(this, word);
+//    }
 
     @Override
     protected void includeNewWord(String word) {
