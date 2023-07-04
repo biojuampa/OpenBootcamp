@@ -1,10 +1,10 @@
 package mediator;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
+import java.util.Vector;
 
-public class LinkedListColleague extends Colleague {
-    private final LinkedList<String> words = new LinkedList<>();
+public class VectorColleague extends Colleague {
+    private final Vector<String> words = new Vector<>();
 
     @Override
     protected void insertWord(String word) {
