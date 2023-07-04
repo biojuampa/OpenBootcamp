@@ -28,7 +28,7 @@ public class StringsFileDisk implements StringsIterator {
             Files.createFile(RUTA_ARCHIVO);
 
         } catch (Exception e) {
-            System.out.println("Error creando el archivo: " + e.getMessage());
+            System.out.print("Error creando el archivo: " + e.getMessage());
         }
 
     }
@@ -42,7 +42,7 @@ public class StringsFileDisk implements StringsIterator {
             file.newLine();
 
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.print(e.getMessage());
         }
 
         totalLines++;
@@ -64,9 +64,9 @@ public class StringsFileDisk implements StringsIterator {
             index++;
 
         } catch (NoSuchElementException e) {
-            System.out.println("ERROR: No hay más datos.");
+            System.out.print("ERROR: No hay más datos.");
         } catch (Exception e) {
-            System.out.println("Error leyendo los datos: " + e.getMessage());
+            System.out.print("Error leyendo los datos: " + e.getMessage());
         }
 
         return line;

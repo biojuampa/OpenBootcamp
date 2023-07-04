@@ -1,6 +1,7 @@
-package iterator;
+import iterator.StringsFileDisk;
+import iterator.StringsMemory;
 
-public class StringArraysMain {
+public class MainIterator {
     public static void main(String[] args) {
         StringsMemory wordsMem = new StringsMemory();
 
@@ -13,9 +14,12 @@ public class StringArraysMain {
             System.out.println(wordsMem.next());
 
         // busco el fallo
-        wordsMem.next();
-        wordsMem.next();
-        wordsMem.next();
+        System.out.println(wordsMem.next());
+        System.out.println(wordsMem.next());
+        wordsMem.reset();
+        System.out.println(wordsMem.next());
+
+        System.out.println("-".repeat(30));
 
         StringsFileDisk wordsDisk = new StringsFileDisk();
 
@@ -27,6 +31,9 @@ public class StringArraysMain {
             System.out.println(wordsDisk.next());
 
         // busco el fallo
-        wordsDisk.next();
+        System.out.println(wordsDisk.next());
+        System.out.println(wordsDisk.next());
+        wordsDisk.reset();
+        System.out.println(wordsDisk.next());
     }
 }

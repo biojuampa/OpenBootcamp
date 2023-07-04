@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class StringsMemory implements StringsIterator {
     private int index = 0;
-    private ArrayList<String> words = new ArrayList<>();
+    private final ArrayList<String> words = new ArrayList<>();
 
     @Override
     public void addNewWord(String word) {
@@ -19,9 +19,9 @@ public class StringsMemory implements StringsIterator {
             word = words.get(index);
             index++;
         } catch (IndexOutOfBoundsException e) {
-            System.out.println("ERROR: No quedan más elementos.");
+            System.out.print("ERROR: No quedan más elementos.");
         } catch (Exception e) {
-            System.out.println("Error: " + e.getMessage());
+            System.out.print("Error: " + e.getMessage());
         }
 
         return word;
