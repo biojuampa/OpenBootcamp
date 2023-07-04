@@ -2,7 +2,7 @@ package mediator;
 
 import java.util.ArrayList;
 
-public class ArraysMediator implements Mediator {
+public class ArraysMediator extends Mediator {
     private final ArrayList<Colleague> colleagues = new ArrayList<>();
 
     @Override
@@ -15,12 +15,12 @@ public class ArraysMediator implements Mediator {
     }
 
     @Override
-    public void sendNewWord(Colleague colleague, String word) {
+    protected void sendNewWord(Colleague colleague, String word) {
         for (Colleague otherColleague: colleagues) {
             if (otherColleague.equals(colleague))
                 continue;
 
-            otherColleague.includeNewWord(word);
+            otherColleague.insertWord(word);
         }
     }
 }

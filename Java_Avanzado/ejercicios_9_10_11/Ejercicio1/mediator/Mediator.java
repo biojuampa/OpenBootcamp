@@ -1,6 +1,6 @@
 package mediator;
 
-public interface Mediator {
-    void registerColleague(Colleague colleague);
-    void sendNewWord(Colleague colleague, String word);
+public abstract class Mediator {
+    public abstract void registerColleague(Colleague colleague);
+    protected abstract void sendNewWord(Colleague colleague, String word);
 }

@@ -18,7 +18,7 @@ public class LinkedListColleague extends Colleague {
     }
 
     @Override
-    protected void includeNewWord(String word) {
+    protected void insertWord(String word) {
         words.add(word);
     }
 }

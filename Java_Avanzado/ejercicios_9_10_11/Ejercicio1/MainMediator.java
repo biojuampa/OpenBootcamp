@@ -1,6 +1,11 @@
-package mediator;
+import mediator.*;
 
-public class List2ListMain {
+/*
+   La clase Main debería estar fuera del paquete mediator e importarlo
+   para que así funcione correctamente la encapsulación.
+*/
+
+public class MainMediator {
     public static void main(String[] args) {
         Mediator mediator = new ArraysMediator();
         Colleague arrayListColleague = new ArrayListColleague();
@@ -9,17 +14,10 @@ public class List2ListMain {
         mediator.registerColleague(arrayListColleague);
         mediator.registerColleague(linkedListColleague);
 
-        arrayListColleague.addNewWord("ArrayList: uno");
-        linkedListColleague.addNewWord("LinkedList: dos");
+        arrayListColleague.addNewWord("ArrayList");
+        linkedListColleague.addNewWord("LinkedList");
 
         System.out.println(arrayListColleague.getAll());
         System.out.println(linkedListColleague.getAll());
-
-//        System.out.println("  ArrayList  |  LinkedList");
-//        System.out.println("--------------------------");
-//        for (int i = 0; i < array.size(); i++) {
-//            System.out.println(" " + array.get(i) + "\t\t" + list.get(i));
-//        }
-
     }
 }
