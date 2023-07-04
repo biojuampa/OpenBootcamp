@@ -18,10 +18,7 @@ public class Main {
                     .wifi(true)
                     ;
 
-            String name = myWatch.getName();
-            String model = myWatch.getModel();
             float price = myWatch.getPrice();
-            String brand = myWatch.getBrand();
             float weight = myWatch.getWeight();
             short width = myWatch.getScreenWidth();
             short height = myWatch.getScreenHeight();
@@ -67,9 +64,6 @@ public class Main {
 
         float price = myPhone.getPrice();
         float discountPercent = myPhone.getDiscountPercent();
-        String name = myPhone.getName();
-        String brand = myPhone.getBrand();
-        String model = myPhone.getModel();
         String specialFeatures = myPhone.getSpecialFeatures();
         short screenWidth = myPhone.getScreenWidth();
         short screenHeight = myPhone.getScreenHeight();
