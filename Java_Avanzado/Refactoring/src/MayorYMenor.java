@@ -5,7 +5,7 @@ public class MayorYMenor {
         int mayor = numeros[0];
         int menor = numeros[0];
 
-        for (int i = 0; i < numeros.length; i++) {
+        for (int i = 1; i < numeros.length; i++) {
             if (mayor < numeros[i])
                 mayor = numeros[i];
 
@@ -52,6 +52,7 @@ public class MayorYMenor {
         System.out.println("Caso 4: (" + mayor + " ; " + menor + ")");
     }
 
+    // Funcional
     public static void imprimeMayorYMenor5(int[] numeros) {
         int mayor = Arrays.stream(numeros).reduce(numeros[0], (a, b) -> a > b ? a : b);
         int menor = Arrays.stream(numeros).reduce(numeros[0], (a, b) -> a < b ? a : b);
