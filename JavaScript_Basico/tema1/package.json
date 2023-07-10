@@ -1,0 +1,17 @@
+{
+  "name": "hola_ob",
+  "version": "1.0.0",
+  "description": "Saludo al mejor bootcamp del mundo mundial ;)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node hola.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Hola",
+    "OB",
+    "OpenBootcamp"
+  ],
+  "author": "Juan Pablo Camussi",
+  "license": "ISC"
+}
