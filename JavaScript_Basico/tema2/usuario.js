@@ -1,4 +1,4 @@
-const name = "Juan Pablo Camussi",
+const userName = "Juan Pablo Camussi",
       age = 46,
       isDev = true,
       date = new Date(),
@@ -12,7 +12,6 @@ const name = "Juan Pablo Camussi",
           url: "https://www.oreilly.com/library/view/clean-code-a/9780136083238/"
       };
 
-const userData = [name, age, isDev, date, book];
+const userData = [userName, age, isDev, date, book];
 
 console.log(userData);
-
