@@ -1,4 +1,4 @@
-# Ejercicios temas 12, 13 y 14
+# Ejercicios de los temas 12, 13 y 14
 
 ## Ejercicio 1
 Siguiendo las normas de nombrado de la sesión 12, diseña dos funciones limpias.
