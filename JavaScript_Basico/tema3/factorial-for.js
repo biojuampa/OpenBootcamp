@@ -5,4 +5,4 @@ for (let i=1; i<=N; i++) {
     factorial *= i;
 }
 
-console.log(factorial);
+console.log(`Factorial de ${N}: ` + factorial);

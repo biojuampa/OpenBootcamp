@@ -7,4 +7,4 @@ while (i <= N) {
     i++;
 }
 
-console.log(factorial);
+console.log(`Factorial de ${N}: ` + factorial);

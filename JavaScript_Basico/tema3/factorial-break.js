@@ -11,4 +11,4 @@ while (true) {
     i++;    
 }
 
-console.log(factorial);
+console.log(`Factorial de ${N}: ` + factorial);
