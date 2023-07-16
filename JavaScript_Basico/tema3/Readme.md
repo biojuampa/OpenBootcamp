@@ -2,6 +2,6 @@
 
 ## Crea los siguientes archivos JS:
 
-* `factorial-for.js:` _Este archivo debe calcular el factorial de 10 utilizando un solo bucle for_
-* `factorial-while.js:` _Este archivo debe calcular el factorial de 10 utilizando un bucle while_
-* `factorial-break.js:` _Este archivo debe calcular el factorial de 10 utilizando un bucle while, una bifurcación if y una sentencia break_
+* `factorial-for.js` _Este archivo debe calcular el factorial de 10 utilizando un solo bucle for_
+* `factorial-while.js` _Este archivo debe calcular el factorial de 10 utilizando un bucle while_
+* `factorial-break.js` _Este archivo debe calcular el factorial de 10 utilizando un bucle while, una bifurcación if y una sentencia break_
