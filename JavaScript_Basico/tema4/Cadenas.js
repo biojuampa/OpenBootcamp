@@ -1,0 +1,21 @@
+const nombre = "Juan Pablo";
+const apellido = "Camussi";
+const estudiante = nombre.concat(" " + apellido);
+const estudianteMayus = estudiante.toUpperCase();
+const estudianteMinus = estudiante.toLowerCase();
+const cantidadDeLetras = estudiante.length;
+const primerLetra = estudiante.charAt(0);
+const ultimaLetra = estudiante.charAt(estudiante.length - 1);
+const sinEspacios = estudiante.replace(/ /g, "");
+const contieneNombre = estudiante.includes(nombre);
+
+console.log(nombre);
+console.log(apellido);
+console.log(estudiante);
+console.log(estudianteMayus);
+console.log(estudianteMinus);
+console.log(cantidadDeLetras);
+console.log(primerLetra);
+console.log(ultimaLetra);
+console.log(sinEspacios);
+console.log(contieneNombre);
