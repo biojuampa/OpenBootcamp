@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multimedia con HTML</title>
+    </head>
+    <body>
+        <h2>Imágenes</h2>
+        <img src="images/logoHTML5.webp" alt="Logo HTML 5" width="150" height="150">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/165px-Tux.svg.png" alt="Image externa Tux (mascota de linux)">
+
+        <h2>Audios</h2>
+        <!-- Codecs soportados: ogg mp3 wav flac (probablemente alguno más) -->
+        <!-- Otros parámetros: autoplay loop -->
+        <audio controls>
+            <source src="audios/Tears_In_Heaven.mp3" type="audio/mp3">
+        </audio>
+
+        <h2>Videos</h2>
+        <p>Video Local</p>
+        <!-- Codecs soportados: webm mp4 ogg -->
+        <!-- Otros parámetros: autoplay loop -->
+        <video width="500" height="300" controls muted>
+            <source src="videos/basural.webm" type="video/mp4">
+        </video>
+        <br>
+        <p>Video Externo</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/I9PaQB011oc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </body>
+</html>
