@@ -1,7 +1,6 @@
 # Ejercicio del tema 4 - Curso de HTML y CSS
 
-## Crea un nuevo documento HTML con el título "Ganando precisión con los selectores en CSS"
-
+* Crea un nuevo documento HTML con el título "Ganando precisión con los selectores en CSS"
 * Crea un nuevo fichero CSS e impórtalo en el documento HTML principal
 * Dentro del body crea una sección con los siguientes elementos:
     * Encabezado que contenga el texto "Lista de la compra"
