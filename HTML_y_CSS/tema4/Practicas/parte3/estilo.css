@@ -1,0 +1,12 @@
+/* Usando tipografías de google */
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+
+html {
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: 'Tektur', cursive;
+    font-size: 14pt;
+    font-weight: 400;
+    font-style: italic;
+    color: olivedrab;
+}
+

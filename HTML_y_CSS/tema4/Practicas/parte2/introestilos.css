@@ -22,3 +22,22 @@
     background-image: url("images/fondo.jpg");
     background-position: right center;
 }
+
+.ancho {
+    width: 30%;
+    background-color: cadetblue;
+}
+
+.alto {
+    height: 200px;
+    background-color: darkolivegreen;
+}
+
+.tarjeta {
+    width: fit-content;
+    border: solid 1px green;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin: 30px 50px;
+    background-color: rgba(0, 128, 0, 0.3);
+}
