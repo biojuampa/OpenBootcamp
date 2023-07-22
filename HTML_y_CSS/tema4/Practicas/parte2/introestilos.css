@@ -1,0 +1,24 @@
+.colores {
+    color: red;
+}
+
+.colores-hex {
+    color: #F033F0;
+}
+
+.colores-rgb {
+    color: rgb(20, 180, 90);
+}
+
+.colores-rgba {
+    color: rgba(75, 10, 50, 0.5);
+}
+
+.fondo {
+    background-color: lightsteelblue;
+}
+
+.fondo-imagen {
+    background-image: url("images/fondo.jpg");
+    background-position: right center;
+}
