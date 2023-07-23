@@ -1,0 +1,69 @@
+.marco {
+    width: max-content;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin: 5px 0;
+    /* background-color: white; */
+}
+
+/* Posicionamiento estático, no se modifica su comportamiento */
+.static {
+    position: static;
+    left: 500px; /* no cambia porque es estático*/
+    background-color: mediumpurple;
+}
+
+/* Posicionamiento relativo, se modifica respecto del punto estático */
+.relative {
+    position: relative;
+    left: 50px;
+    background-color: darkseagreen;
+}
+
+/* Posicionamiento fijado relativo a la pantalla */
+.fixed {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    background-color: lime;
+    z-index: 10;
+}
+
+.contenedor {
+    left: 25px;
+    width: 350px;
+    height: 200px;
+    background-color: lightblue;
+}
+
+/* Posicionamiento absoluto, es relativo al padre */
+.absolute {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: min-content;
+    border-color: gray;
+    background-color: cadetblue;
+    z-index: 5;
+}
+
+/* Posicionamiento adhesivo, una vez que
+llega, queda fijado en esa posición */
+.sticky {
+    position: sticky;
+    top: 20px;
+    text-align: center;
+    width: 85%;
+    color: white;
+    background-color: crimson;
+    z-index: 8;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    height: 50px;
+    margin: 550px 0 0 0;
+    background-color: brown;
+}
