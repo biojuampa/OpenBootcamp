@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.banner {
+    width: 100vw;
+}
+
+.banner:hover {
+    cursor: pointer;
+}
+
+div.galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+img.galeria {
+    width: 200px;
+    border-radius: 5px;
+}
+
+img.galeria:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}

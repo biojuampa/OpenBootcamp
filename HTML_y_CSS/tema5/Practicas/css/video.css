@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: chartreuse;
+    /* background-color: aqua; */
+}
+
+h1 {
+    text-align: center;
+}
+
+.accion {
+    font-size: xx-large;
+    padding: 30px 50px;
+    width: max-content;
+    border: 1px solid green;
+    border-radius: 10px;
+    color: green;
+    background-color: lightgreen;
+}
+
+.accion:hover {
+    color: lightgreen;
+    background-color: green;
+    border-color: lightgreen;
+    cursor: pointer;
+}
