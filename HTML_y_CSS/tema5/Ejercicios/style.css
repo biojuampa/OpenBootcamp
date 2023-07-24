@@ -1,3 +1,26 @@
 * {
-    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: crimson;
+    background-color: bisque;
+}
+
+h1 {
+    text-align: center;    
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+.imagen {
+    width: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.imagen:hover {
+    opacity: 0.5;
 }
