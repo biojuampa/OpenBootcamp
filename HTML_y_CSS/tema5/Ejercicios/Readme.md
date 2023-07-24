@@ -1,4 +1,4 @@
-# Ejercicio del tema 5 - Curso de JavaScript Básico
+# Ejercicio del tema 5 - Curso de HTML y CSS
 
 * Crea un nuevo documento HTML con el título "Disposición de elementos en CSS"
 * Crea un nuevo fichero CSS e impórtalo en el documento HTML principal
