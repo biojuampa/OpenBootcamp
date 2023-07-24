@@ -1,0 +1,42 @@
+/* https://codepen.io/enxaneta/full/adLPwv */
+
+.marco {
+    border: 1px solid #333;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    height: 500px;
+    background-color: yellow;
+}
+
+.contenido1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+    background-color: lime;
+}
+
+.contenido2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 100px;
+    background-color: lime;
+}
+
+.contenido3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+    background-color: lime;
+}

@@ -1,0 +1,48 @@
+html {
+    color: #704214;
+}
+
+.contenedor {
+    text-align: justify;
+    width: 400px;
+    height: 100px;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+}
+
+.visible {
+    overflow: visible;
+    margin-bottom: 80px;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.auto {
+    overflow: auto;
+}
+
+.scroll {
+    overflow: scroll;
+}
+
+.overflow-x {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.overflow-y {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.height-auto {
+    height: auto;
+}
+
+footer {
+    height: 300px;
+}
