@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "gotica";
+    src: url(../fonts/old_london/Olondon_.otf);
+}
+
+.contenedor {
+    border-radius: 10px;
+    width: 300px;
+    height: max-content;
+    padding: 50px 30px;
+    margin: 15px auto;
+}
+
+.verde {
+    color: green;
+    background-color: lightgreen;
+    /* border: 1px solid green; */
+}
+
+.rojo {
+    color: darkred;
+    background-color: rgba(139, 0, 0, 0.247);
+    /* border: 1px solid darkred; */
+}
+
+.azul {
+    color: blue;
+    background-color: lightblue;
+    /* border: 1px solid blue;     */
+}
+
+.amarillo {
+    color: rgb(145, 145, 2);
+    background-color: rgba(255, 255, 0, 0.5);
+    /* border: 1px solid blue;     */
+}
+
+.contenedor span {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor span.frase {
+    font-style: italic;
+}
+
+.contenedor span.frase::before {
+    content: "« ";
+}
+
+.contenedor span.frase::after {
+    content: " »";
+}
+
+.contenedor span.autor {
+    float: right;
+}
+
+.contenedor p::first-letter {
+    font-size: 35pt;
+    font-family: gotica;
+    text-transform: uppercase;
+    border-radius: 2px;
+    margin-right: 1px;
+    padding: 5px 1px;
+    color: rgba(255, 255, 0);
+    background-color: rgb(145, 145, 2, 0.7);
+}
+
+.listado {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px auto;
+    color: crimson;
+    background-color: lightgray;
+}
+
+.listado li::marker {
+    color: green;
+}

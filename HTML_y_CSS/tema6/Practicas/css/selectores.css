@@ -1,0 +1,29 @@
+body {
+    color: red;
+}
+
+section.main .contenedor p {
+    color: blueviolet;
+}
+
+section.main .contenedor p b {
+    color: blue;
+}
+
+section.main p b {
+    color: crimson;
+}
+
+section.main .contenedor .btn {
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    color: blueviolet;
+    background-color: lightpink;
+}
+
+section.main .contenedor .btn:hover {
+    color: lightpink;
+    background-color: blueviolet;
+    cursor: pointer;
+}

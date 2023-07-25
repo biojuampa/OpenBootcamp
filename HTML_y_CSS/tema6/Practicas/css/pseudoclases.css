@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+}
+ 
+.hover {
+    border: 1px solid maroon;
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+    padding: 50px;
+    color: maroon;
+    background-color: bisque;
+}
+
+.hover:hover {
+    background-color: burlywood;
+}
+
+section.listas {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid maroon;
+    border-bottom: 1px solid maroon;
+    background-color: bisque;
+}
+
+section.listas ul {
+    padding: 20px;
+    color: maroon;
+    /* background-color: bisque; */
+    list-style: none;
+    /* border: 1px solid maroon; */
+    /* border-radius: 5px; */
+}
+
+section.listas ul li {
+    padding: 2px 10px;
+}
+
+section.listas ul li:first-child {
+    padding: 2px 0 5px;
+    color: crimson;
+    text-transform: uppercase;
+}
+
+section.listas ul li a {
+    text-decoration: none;
+}
+
+section.listas ul li a:link {
+    color: maroon;
+}
+
+section.listas ul li a:visited {
+    color: maroon;
+}
+
+section.listas ul li a:hover {
+    color: green;
+}
+
+section.listas ul li a:active {
+    color: black;
+}
