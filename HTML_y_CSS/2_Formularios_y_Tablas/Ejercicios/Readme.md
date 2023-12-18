@@ -1,6 +1,6 @@
-# Ejercicio 1 - Curso de HTML CSS
+# Ejercicio 2 - Curso de HTML CSS
 
-## Crea un nuevo documento HTML que cumpla los siguientes parámetros:
+## 1. Crea un nuevo documento HTML que cumpla los siguientes parámetros:
 
 * El título debe ser "Ejercicio 02 - Formularios en HTML"
 * El body debe contener un formulario que cumpla las siguientes características
@@ -11,8 +11,8 @@
         * Un campo de área de texto llamado "frase-favorita"
         * Un botón de envío
         * Un botón de reset
- 
-## Crea un nuevo documento HTML que cumpla los siguientes parámetros:
+
+## 2. Crea un nuevo documento HTML que cumpla los siguientes parámetros:
 
 * El título debe ser "Ejercicio 02/2 - Tablas en HTML"
 * El body debe contener una tabla que cumpla las siguientes características:
