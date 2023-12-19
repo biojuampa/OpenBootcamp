@@ -12,4 +12,3 @@
         * Al igual que en la lista anterior, cada uno de los elementos debe tener un id como sigue: primer elemento "elemento-1", segundo elemento "elemento-2", etc.
     * Modifica el CSS para que el primer elemento de cada lista se muestre de color rojo
     * A través del encadenamiento de selectores, haz que el primer elemento de la primera lista tenga un tamaño de letra de 2rem
-    
