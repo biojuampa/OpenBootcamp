@@ -16,6 +16,7 @@ public class Main {
         System.out.println("Cargando el contexto ...");
 
         // aquí se creará el objeto Greeter (instancia de clase)
+        @SuppressWarnings("resource")
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
 
         Thread.sleep(3000);

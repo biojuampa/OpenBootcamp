@@ -45,16 +45,16 @@ Fuente: https://docs.spring.io/spring-framework/reference/core/beans/basics.html
 
 <pre>
 <r>spring-helloworld</r>
-  ├── <v>pom.xml</v>
+  ├── <v>[pom.xml]</v>
   ├── src
   │   ├── main
   │   │   ├── <sb>java</sb>
   │   │   │   └── <sb>com</sb>
   │   │   │       └── <sb>example</sb>
-  │   │   │           ├── <sg>Greeter.java</sg>
-  │   │   │           └── <sg>Main.java</sg>
+  │   │   │           ├── <sg>[Greeter.java]</sg>
+  │   │   │           └── <sg>[Main.java]</sg>
   │   │   └── <sb>resources</sb>
-  │   │       └── <y>beans.xml</y>
+  │   │       └── <y>[beans.xml]</y>
   │   └── test
   │       └── java
   └── target
@@ -67,7 +67,7 @@ Fuente: https://docs.spring.io/spring-framework/reference/core/beans/basics.html
       └── test-classes
 </pre>
 
-**Nota:** Los archivos resaltados en color son los que se han trabajado
+**Nota:** Los archivos resaltados en color y/o encerrados entre corchetes son los que se han trabajado
 
 <style>
     y {color: yellow}
