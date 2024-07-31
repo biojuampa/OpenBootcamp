@@ -43,33 +43,34 @@ Fuente: https://docs.spring.io/spring-framework/reference/core/beans/basics.html
 
 ## <sg>Estructura del proyecto</sg>
 
-<pre>
-<r>spring-helloworld</r>
-  ├── <v>[pom.xml]</v>
-  ├── src
-  │   ├── main
-  │   │   ├── <sb>java</sb>
-  │   │   │   └── <sb>com</sb>
-  │   │   │       └── <sb>example</sb>
-  │   │   │           ├── <sg>[Greeter.java]</sg>
-  │   │   │           └── <sg>[Main.java]</sg>
-  │   │   └── <sb>resources</sb>
-  │   │       └── <y>[beans.xml]</y>
-  │   └── test
-  │       └── java
-  └── target
-      ├── classes
-      │   ├── beans.xml
-      │   └── com
-      │       └── example
-      │           ├── Greeter.class
-      │           └── Main.class
-      └── test-classes
-</pre>
+[Nota]: # (Esta es la estructura del proyecto de la cual saqué la captura que inserto más abajo. Esto es debido a que github no la interpreta adecuadamente.)
+[//]: # (<pre>)
+[//]: # (<r>spring-helloworld</r>)
+[//]: # (  ├── <v>pom.xml</v>)
+[//]: # (  ├── src)
+[//]: # (  │   ├── main)
+[//]: # (  │   │   ├── <sb>java</sb>)
+[//]: # (  │   │   │   └── <sb>com</sb>)
+[//]: # (  │   │   │       └── <sb>example</sb>)
+[//]: # (  │   │   │           ├── <sg>Greeter.java</sg>)
+[//]: # (  │   │   │           └── <sg>Main.java</sg>)
+[//]: # (  │   │   └── <sb>resources</sb>)
+[//]: # (  │   │       └── <y>beans.xml</y>)
+[//]: # (  │   └── test)
+[//]: # (  │       └── java)
+[//]: # (  └── target)
+[//]: # (      ├── classes)
+[//]: # (      │   ├── beans.xml)
+[//]: # (      │   └── com)
+[//]: # (      │       └── example)
+[//]: # (      │           ├── Greeter.class)
+[//]: # (      │           └── Main.class)
+[//]: # (      └── test-classes)
+[//]: # (</pre>)
 
-![tree](./img.png)
+![project tree](./tree.png)
 
-**Nota:** Los archivos resaltados en color y/o encerrados entre corchetes son los que se han trabajado
+**Nota:** Los archivos resaltados en color son los que se han trabajado
 
 <style>
     y {color: yellow}
