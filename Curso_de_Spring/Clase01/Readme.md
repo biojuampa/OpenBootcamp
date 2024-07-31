@@ -70,7 +70,8 @@ Fuente: https://docs.spring.io/spring-framework/reference/core/beans/basics.html
 
 ![project tree](./tree.png)
 
-**Nota:** Los archivos resaltados en color son los que se han trabajado
+> [!NOTE]
+> Los archivos resaltados en color son los que se han trabajado
 
 ---
 
