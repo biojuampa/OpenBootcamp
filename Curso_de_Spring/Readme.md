@@ -10,6 +10,8 @@
 * <sg>Conceptos básicos de Sprig</sg>
 * <sg>Annotations-based configuration for IoC Container</sg>
 
+---
+
 <style>
     sg {color: #6CB52D} /* Spring Green */
 </style>
