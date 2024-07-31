@@ -67,6 +67,8 @@ Fuente: https://docs.spring.io/spring-framework/reference/core/beans/basics.html
       └── test-classes
 </pre>
 
+![tree](./img.png)
+
 **Nota:** Los archivos resaltados en color y/o encerrados entre corchetes son los que se han trabajado
 
 <style>
