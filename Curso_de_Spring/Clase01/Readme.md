@@ -72,6 +72,8 @@ Fuente: https://docs.spring.io/spring-framework/reference/core/beans/basics.html
 
 **Nota:** Los archivos resaltados en color son los que se han trabajado
 
+---
+
 <style>
     y {color: yellow}
 	r {color: #C33}
