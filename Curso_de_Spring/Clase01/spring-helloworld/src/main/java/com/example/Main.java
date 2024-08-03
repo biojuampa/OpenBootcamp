@@ -6,6 +6,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 /**
  * Observar cómo el objeto Greeter se instancia solamente una vez
  * y posteriormente se entrega cada vez que se lo solicita al *context*
+ * Esto sucede siempre que en el bean "scope=singleton", que es el
+ * valor por defecto. El otro posible valor es "prototype", en cuyo caso
+ * se instanciará un objeto nuevo por cada llamada a "context.getBean()"
  * 
  * Por el contrario, el último *saludador* se obtiene creando una nueva
  * instancia de la clase Greeter (obsérvese que se genera nuevamente el

@@ -7,7 +7,9 @@
 
 ## [Clase 02:](./Clase02)
 
-* <sg>Conceptos básicos de Sprig</sg>
+* <sg>Conceptos básicos de Sprig (Spring Framework)</sg>
+* <sg>Beans con argumentos en los constructores de las clases</sg>
+* <sg>Auto escaneo de beans</sg>
 * <sg>Annotations-based configuration for IoC Container</sg>
 
 ---
