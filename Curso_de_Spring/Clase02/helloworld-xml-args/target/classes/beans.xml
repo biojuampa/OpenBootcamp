@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- El "scope" puede ser igual a "singleton" o "prototype" (por los patrones de diseño) -->
+	<bean id="greeter" class="org.example.Greeter" scope="prototype">
+	</bean>
+
+	<bean id="customerSupport" class="org.example.CustomerSupport">
+		<!-- Aquí le paso los argumentos al constructor de la clase -->
+		<constructor-arg name="applicationName" value="CS-3000" />
+		<constructor-arg name="greeter" ref="greeter" />
+	</bean>
+
+</beans>
