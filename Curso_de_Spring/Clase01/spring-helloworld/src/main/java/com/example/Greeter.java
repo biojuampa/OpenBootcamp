@@ -5,7 +5,7 @@ public class Greeter {
         System.out.println("Construyendo la clase Greeter ...");
     }
 
-    public String saluda() {
+    public String sayHello() {
         return "¡Hola Mundo!";
     }
 }

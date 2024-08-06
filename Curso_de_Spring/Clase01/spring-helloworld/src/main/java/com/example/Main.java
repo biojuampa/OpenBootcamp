@@ -27,7 +27,7 @@ public class Main {
 
         // aquí se entrega el objeto Greeter instanciado
         Greeter greeter = (Greeter) context.getBean("greeterService");
-        String saludo = greeter.saluda();
+        String saludo = greeter.sayHello();
         System.out.println(saludo);
 
         Thread.sleep(3000);
@@ -35,7 +35,7 @@ public class Main {
 
         // nuevamente se entrega el objeto Greeter ya instanciado
         Greeter greeter2 = (Greeter) context.getBean("greeterService");
-        String saludo2 = greeter2.saluda();
+        String saludo2 = greeter2.sayHello();
         System.out.println(saludo2);
         
         Thread.sleep(3000);
@@ -43,7 +43,7 @@ public class Main {
 
         // se vuelve a crear una instancia de la clase Greeter
         Greeter greeter3 = new Greeter();
-        String saludo3 = greeter3.saluda();
+        String saludo3 = greeter3.sayHello();
         System.out.println(saludo3);
     }
 }
