@@ -5,7 +5,14 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 		https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<!-- El "scope" puede ser igual a "singleton" o "prototype" (por los patrones de diseño) -->
+	<!-- El "scope" puede ser:
+	       - singleton
+		   - prototype
+		   - request
+		   - session
+		   - application
+		   - websocket
+		   - o bien un "custom scope" -->
 	<bean id="greeter" class="org.example.Greeter" scope="prototype">
 	</bean>
 

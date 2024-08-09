@@ -14,7 +14,7 @@ public class CustomerSupport {
     // paso el valor al argumento "applicationName" con @Value
     // (esto solo es para la instancia del bean)
     public CustomerSupport(@Value("CS-3000") String applicationName, Greeter greeter) {
-        System.out.println("Construyendo a Customer Support Class ...");
+        System.out.println("Construyendo a CustomerSupport Class ...");
     
         this.greeter = greeter;
         this.applicationName = applicationName;
